@@ -5,9 +5,9 @@ window.PROJECTS = [
     tag: "SGD dynamics",
     repo: "https://github.com/ThunderstormXX/SGDiffusion",
     image: "figures/sgdiffusion.png",
-    imageAlt: "SGD versus Langevin mean and covariance experiment figure",
-    imageSource: "SGDiffusion/src/scripts/exp6/figures/exp43_mlp_langevin_mean_covariance_full_clean.png",
-    imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/main/src/scripts/exp6/figures/exp43_mlp_langevin_mean_covariance_full_clean.png",
+    imageAlt: "PCA trajectory cloud from SGDiffusion local minima experiments",
+    imageSource: "SGDiffusion/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
+    imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/codex/exp9-local-minima/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     summary:
       "Reproducible experiments for finite-step SGD dynamics, Langevin-type approximations, Fokker-Planck predictions, Hessian-basis diagnostics, and small neural-network validation.",
     details:
