@@ -4,7 +4,7 @@ window.PROJECTS = [
     title: "SGDiffusion",
     tag: "SGD dynamics",
     repo: "https://github.com/ThunderstormXX/SGDiffusion",
-    image: "figures/sgdiffusion.png",
+    image: "figures/sgdiffusion-pca-trajectory-cloud.png",
     imageAlt: "PCA trajectory cloud from SGDiffusion local minima experiments",
     imageSource: "SGDiffusion/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/codex/exp9-local-minima/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
