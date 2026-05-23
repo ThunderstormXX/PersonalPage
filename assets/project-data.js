@@ -139,8 +139,8 @@ window.PROJECTS = [
     title: "Computational-mathematics",
     tag: "Numerics",
     repo: "https://github.com/ThunderstormXX/Computational-mathematics",
-    image: "figures/computational-mathematics.png",
-    imageAlt: "Log-log numerical error plot for computing the real cube root",
+    image: "figures/computational-mathematics-root-sqrt3.png",
+    imageAlt: "Log-log numerical error plot near sqrt(3) for computing the real cube root",
     imageSource: "Computational-mathematics/All tasks/test.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/Computational-mathematics/blob/main/All%20tasks/test.ipynb",
     summary:
