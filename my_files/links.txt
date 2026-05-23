@@ -1,0 +1,16 @@
+my projects:
+from https://github.com/ThunderstormXX
+
+
+SGDiffusion – neural network optimization experiments (SGD vs GD, Hessians, diffusion dynamics)
+Ridiculous-LLM-Compression – pruning and healing library for large language models with LoRA fine-tuning
+Adversarial-Attacks – adaptive loss scaling for adversarial training
+Just Relax It – relaxation methods (BMM 24–25)
+CFW-in-ML – Conjugate Frank-Wolfe for ML (paper project)
+Methods-Optimization – optimization methods assignments
+Reinforcement_learning – reinforcement learning experiments
+Computational-mathematics – computational mathematics assignments
+MLNotes – notebooks on deep learning
+MLFinance – surrogate modeling of Black–Scholes with neural networks
+
+Эти проекты надо подсветить в github io
