@@ -4,7 +4,7 @@ window.PROJECTS = [
     title: "SGDiffusion",
     tag: "SGD dynamics",
     repo: "https://github.com/ThunderstormXX/SGDiffusion",
-    image: "assets/projects/sgdiffusion.png",
+    image: "figures/sgdiffusion.png",
     imageAlt: "SGD versus Langevin mean and covariance experiment figure",
     imageSource: "SGDiffusion/src/scripts/exp6/figures/exp43_mlp_langevin_mean_covariance_full_clean.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/main/src/scripts/exp6/figures/exp43_mlp_langevin_mean_covariance_full_clean.png",
@@ -24,7 +24,7 @@ window.PROJECTS = [
     title: "Ridiculous-LLM-Compression",
     tag: "LLM compression",
     repo: "https://github.com/ThunderstormXX/Ridiculous-LLM-Compression",
-    image: "assets/projects/llm-compression.png",
+    image: "figures/llm-compression.png",
     imageAlt: "Perplexity impact of attention head merging by layer",
     imageSource: "Ridiculous-LLM-Compression/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/Ridiculous-LLM-Compression/blob/main/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
@@ -43,7 +43,7 @@ window.PROJECTS = [
     title: "Adversarial-Attacks",
     tag: "Robust ML",
     repo: "https://github.com/ThunderstormXX/Adversarial-Attacks",
-    image: "assets/projects/adversarial-attacks.png",
+    image: "figures/adversarial-attacks.png",
     imageAlt: "Accuracy comparison between ALSO and AdamW on adversarial attacks",
     imageSource: "Adversarial-Attacks/checkpoints/exp_1/figures/mean_std_accuracy.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/Adversarial-Attacks/blob/main/checkpoints/exp_1/figures/mean_std_accuracy.png",
@@ -62,7 +62,7 @@ window.PROJECTS = [
     title: "Just Relax It",
     tag: "PyTorch library",
     repo: "https://github.com/intsystems/relaxit",
-    image: "assets/projects/relaxit.png",
+    image: "figures/relaxit.png",
     imageAlt: "Discrete to continuous relaxation overview",
     imageSource: "relaxit/assets/overview.png",
     imageSourceUrl: "https://github.com/intsystems/relaxit/blob/main/assets/overview.png",
@@ -82,9 +82,9 @@ window.PROJECTS = [
     title: "CFW-in-ML",
     tag: "Frank-Wolfe",
     repo: "https://github.com/ThunderstormXX/CFW-in-ML",
-    image: "assets/projects/cfw-in-ml.png",
-    imageAlt: "Conjugacy value by iterations plot from the CFW notebook",
-    imageSource: "CFW-in-ML/notebooks/CFW_logregression.ipynb",
+    image: "figures/cfw-in-ml.png",
+    imageAlt: "Experiment 6 LIBSVM criterion curves from the CFW notebook",
+    imageSource: "CFW-in-ML/notebooks/CFW_logregression.ipynb, Experiment 6",
     imageSourceUrl: "https://github.com/ThunderstormXX/CFW-in-ML/blob/main/notebooks/CFW_logregression.ipynb",
     summary:
       "Implementations of FW, CFW, and NFW algorithms for binary classification in logistic regression models.",
@@ -93,7 +93,7 @@ window.PROJECTS = [
     highlights: [
       "FW, CFW, and NFW implementations for logistic regression.",
       "MNIST and LIBSVM-style experimental setups.",
-      "Conjugacy and criterion plots extracted from the research notebook."
+      "Experiment 6 criterion plots extracted from the research notebook."
     ]
   },
   {
@@ -101,17 +101,17 @@ window.PROJECTS = [
     title: "Methods-Optimization",
     tag: "Optimization",
     repo: "https://github.com/ThunderstormXX/Methods-Optimization",
-    image: "assets/projects/methods-optimization.png",
-    imageAlt: "Comparison of constraints and optimizers over iterations",
-    imageSource: "Methods-Optimization/comparison_all.png",
-    imageSourceUrl: "https://github.com/ThunderstormXX/Methods-Optimization/blob/main/comparison_all.png",
+    image: "figures/methods-optimization.png",
+    imageAlt: "Nesterov convergence curves with gamma 1 over L and different momentums",
+    imageSource: "Methods-Optimization/homeworks/8sem/hw_1/hw1.ipynb",
+    imageSourceUrl: "https://github.com/ThunderstormXX/Methods-Optimization/blob/main/homeworks/8sem/hw_1/hw1.ipynb",
     summary:
       "Optimization methods coursework and experiments collected from applied mathematics studies.",
     details:
       "The repository contains optimization assignments and comparative plots across constraints and methods, useful as a compact record of algorithmic experiments.",
     highlights: [
-      "Side-by-side optimizer comparisons.",
-      "L1, L2, L-infinity, and combined constraint experiments.",
+      "Nesterov acceleration with gamma = 1/L and different momentums.",
+      "Heavy-ball, Newton, BFGS, and LBFGS comparisons.",
       "Coursework code from applied optimization practice."
     ]
   },
@@ -120,7 +120,7 @@ window.PROJECTS = [
     title: "Reinforcement_learning",
     tag: "RL",
     repo: "https://github.com/ThunderstormXX/Reinforcement_learning",
-    image: "assets/projects/reinforcement-learning.png",
+    image: "figures/reinforcement-learning.png",
     imageAlt: "Reward curve from reinforcement learning homework",
     imageSource: "Reinforcement_learning/ml_advanced_hw/hw1/homework.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/Reinforcement_learning/blob/main/ml_advanced_hw/hw1/homework.ipynb",
@@ -139,18 +139,18 @@ window.PROJECTS = [
     title: "Computational-mathematics",
     tag: "Numerics",
     repo: "https://github.com/ThunderstormXX/Computational-mathematics",
-    image: "assets/projects/computational-mathematics.png",
-    imageAlt: "Numerical domain and circumference plot from computational mathematics notebooks",
-    imageSource: "Computational-mathematics/All tasks/test3.ipynb",
-    imageSourceUrl: "https://github.com/ThunderstormXX/Computational-mathematics/blob/main/All%20tasks/test3.ipynb",
+    image: "figures/computational-mathematics.png",
+    imageAlt: "Log-log numerical error plot for computing the real cube root",
+    imageSource: "Computational-mathematics/All tasks/test.ipynb",
+    imageSourceUrl: "https://github.com/ThunderstormXX/Computational-mathematics/blob/main/All%20tasks/test.ipynb",
     summary:
       "Practical computational mathematics assignments with numerical tasks across interpolation, gradients, differential equations, and 3D plots.",
     details:
       "The notebooks cover practical numerical methods, from finite differences and interpolation to gradient descent and geometry-heavy computational tasks.",
     highlights: [
       "Many notebook-based numerical experiments.",
-      "Interpolation, differential equations, gradients, and 3D visualization.",
-      "Concrete plots extracted from assignment outputs."
+      "Interpolation, differential equations, gradients, and numerical errors.",
+      "Log-log root error plot extracted from assignment outputs."
     ]
   },
   {
@@ -158,17 +158,17 @@ window.PROJECTS = [
     title: "MLNotes",
     tag: "ML notes",
     repo: "https://github.com/ThunderstormXX/MLNotes",
-    image: "assets/projects/mlnotes.png",
-    imageAlt: "Generated image grid from a WGAN notebook",
-    imageSource: "MLNotes/DL/WGAN.ipynb",
-    imageSourceUrl: "https://github.com/ThunderstormXX/MLNotes/blob/main/DL/WGAN.ipynb",
+    image: "figures/mlnotes.png",
+    imageAlt: "Red fMRI brain slices from the MathForecast lab notebook",
+    imageSource: "MLNotes/MathForecast/Lab_work_2.ipynb",
+    imageSourceUrl: "https://github.com/ThunderstormXX/MLNotes/blob/main/MathForecast/Lab_work_2.ipynb",
     summary:
       "Notebooks and notes on stochastic processes, EM, GANs, NeuralODE, recommender systems, statistics, and time-series forecasting.",
     details:
       "MLNotes is a broad notebook collection: deep learning experiments, stochastic-process simulations, NeuralODE attempts, WGAN outputs, forecasting labs, and statistics work.",
     highlights: [
+      "fMRI tensor decomposition and MathForecast lab notebooks.",
       "WGAN, EM, NeuralODE, and stochastic-process notebooks.",
-      "Forecasting and recommender-system labs.",
       "Visual outputs preserved directly in notebooks."
     ]
   },
@@ -177,7 +177,7 @@ window.PROJECTS = [
     title: "MLFinance",
     tag: "Quant finance",
     repo: "https://github.com/ThunderstormXX/MLFinance",
-    image: "assets/projects/mlfinance.png",
+    image: "figures/mlfinance.png",
     imageAlt: "Black-Scholes Greeks approximation surfaces",
     imageSource: "MLFinance/surrogate_modeling.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/MLFinance/blob/main/surrogate_modeling.ipynb",
