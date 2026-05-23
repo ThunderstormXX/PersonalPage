@@ -192,3 +192,19 @@ window.PROJECTS = [
     ]
   }
 ];
+
+const priorityProjectOrder = [
+  "sgdiffusion",
+  "mlfinance",
+  "computational-mathematics",
+  "relaxit",
+  "mlnotes"
+];
+const priorityBySlug = new Map(priorityProjectOrder.map((slug, index) => [slug, index]));
+
+window.PROJECTS.sort((left, right) => {
+  const leftPriority = priorityBySlug.get(left.slug) ?? Number.POSITIVE_INFINITY;
+  const rightPriority = priorityBySlug.get(right.slug) ?? Number.POSITIVE_INFINITY;
+  if (leftPriority === rightPriority) return 0;
+  return leftPriority - rightPriority;
+});
