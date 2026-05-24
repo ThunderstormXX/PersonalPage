@@ -193,6 +193,78 @@ window.PROJECTS = [
   }
 ];
 
+window.TEAM_PROJECTS = [
+  {
+    slug: "team-llm-compression",
+    title: "LLM Compression and Distillation",
+    tag: "BRAIn Lab team",
+    repo: "https://github.com/brain-lab-research/llm-compression",
+    image: "figures/team-llm-compression.svg",
+    imageAlt: "Schematic preview of an LLM compression and distillation pipeline",
+    summary:
+      "A team framework for studying LLM compression methods: quantization, knowledge distillation, layer pruning, KV-cache optimization, and reproducible evaluation.",
+    status: "Public repository",
+    action: "Open repository"
+  },
+  {
+    slug: "team-theory-games",
+    title: "Q-Learning and LLM Agents in Games",
+    tag: "BRAIn Lab team",
+    repo: "https://github.com/ThunderstormXX/TheoryGamesDL",
+    image: "figures/team-theory-games.png",
+    imageAlt: "Cooperation-rate trajectories in game-theoretic reinforcement learning experiments",
+    summary:
+      "A team project combining Q-learning, neural reinforcement learning agents, and LLM-agent experiments for game-theoretic social dilemmas.",
+    status: "Public repository",
+    action: "Open repository"
+  },
+  {
+    slug: "team-nlhf",
+    title: "NLHF",
+    tag: "BRAIn Lab team",
+    image: "figures/team-nlhf.png",
+    imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
+    summary:
+      "A team project on preference-style and game-theoretic feedback pipelines for language-model alignment and model comparison.",
+    status: "Repository link coming soon",
+    action: "Details soon"
+  },
+  {
+    slug: "team-early-exit",
+    title: "SkipLayer / EarlyExit",
+    tag: "BRAIn Lab team",
+    image: "figures/team-early-exit.svg",
+    imageAlt: "Schematic preview of early-exit language-model inference with aligners and an adapter",
+    summary:
+      "An early-exit LLM training project where intermediate layers are aligned to the final layer, while an adapter learns when inference can stop.",
+    status: "Repository link coming soon",
+    action: "Details soon"
+  },
+  {
+    slug: "team-sgdiffusion",
+    title: "SGDiffusion Team Track",
+    tag: "BRAIn Lab team",
+    href: "project.html?project=sgdiffusion",
+    image: "figures/sgdiffusion-pca-trajectory-cloud.png",
+    imageAlt: "PCA trajectory cloud from SGDiffusion local minima experiments",
+    summary:
+      "A team research track around SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built on the SGDiffusion workflow.",
+    status: "Project page",
+    action: "Open project page"
+  },
+  {
+    slug: "team-optimization-flows",
+    title: "Optimization of Flows",
+    tag: "BRAIn Lab team",
+    image: "figures/team-optimization-flows.png",
+    imageAlt: "Urban logistics route map with multiple agent trajectories and load labels",
+    summary:
+      "A team project comparing algorithms for transportation-flow optimization and routing in urban logistics.",
+    status: "Repository link coming soon",
+    action: "Details soon"
+  }
+];
+
 const priorityProjectOrder = [
   "sgdiffusion",
   "mlfinance",

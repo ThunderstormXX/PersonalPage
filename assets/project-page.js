@@ -1,5 +1,6 @@
 (function () {
   const projects = window.PROJECTS || [];
+  const teamProjects = window.TEAM_PROJECTS || [];
 
   function escapeHtml(value) {
     return String(value)
@@ -9,14 +10,37 @@
       .replace(/"/g, "&quot;");
   }
 
-  function projectUrl(slug) {
+  function detailUrl(slug) {
     return `project.html?project=${encodeURIComponent(slug)}`;
   }
 
-  function cardHtml(project) {
+  function isExternalUrl(url) {
+    return /^https?:\/\//.test(url);
+  }
+
+  function cardUrl(project, kind) {
+    if (kind === "personal") return detailUrl(project.slug);
+    return project.href || project.repo || "";
+  }
+
+  function linkAttributes(url) {
+    if (!url) return "";
+    const target = isExternalUrl(url) ? ' target="_blank" rel="noreferrer"' : "";
+    return ` href="${escapeHtml(url)}"${target}`;
+  }
+
+  function cardHtml(project, kind = "personal") {
     const featuredClass = project.featured ? " project-card--featured" : "";
+    const url = cardUrl(project, kind);
+    const tagName = url ? "a" : "article";
+    const placeholderClass = url ? "" : " project-card--placeholder";
+    const actionText = project.action || (url ? "Open project" : "Details soon");
+    const status = project.status
+      ? `<span class="project-card__status">${escapeHtml(project.status)}</span>`
+      : "";
+
     return `
-      <a class="project-card${featuredClass}" href="${projectUrl(project.slug)}">
+      <${tagName} class="project-card${featuredClass}${placeholderClass}"${linkAttributes(url)}>
         <span class="project-card__media">
           <img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt)}" loading="lazy">
         </span>
@@ -24,16 +48,19 @@
           <span class="project-card__tag">${escapeHtml(project.tag)}</span>
           <span class="project-card__title">${escapeHtml(project.title)}</span>
           <span class="project-card__text">${escapeHtml(project.summary)}</span>
-          <span class="project-card__action">Open project</span>
+          ${status}
+          <span class="project-card__action">${escapeHtml(actionText)}</span>
         </span>
-      </a>
+      </${tagName}>
     `;
   }
 
   function renderProjectGrids() {
     document.querySelectorAll("[data-project-grid]").forEach((grid) => {
-      const limit = Number(grid.dataset.limit || projects.length);
-      grid.innerHTML = projects.slice(0, limit).map(cardHtml).join("");
+      const kind = grid.dataset.projectGrid || "personal";
+      const source = kind === "team" ? teamProjects : projects;
+      const limit = Number(grid.dataset.limit || source.length);
+      grid.innerHTML = source.slice(0, limit).map((project) => cardHtml(project, kind)).join("");
     });
   }
 
@@ -101,8 +128,8 @@
           </section>
         </div>
         <nav class="project-nav" aria-label="Project navigation">
-          <a href="${projectUrl(previous.slug)}">Previous: ${escapeHtml(previous.title)}</a>
-          <a href="${projectUrl(next.slug)}">Next: ${escapeHtml(next.title)}</a>
+          <a href="${detailUrl(previous.slug)}">Previous: ${escapeHtml(previous.title)}</a>
+          <a href="${detailUrl(next.slug)}">Next: ${escapeHtml(next.title)}</a>
         </nav>
       </section>
     `;

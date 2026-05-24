@@ -15,7 +15,7 @@
     <link rel="icon" href="figures/site-icon.svg?v=site-icon-1" type="image/svg+xml">
     <link rel="alternate icon" href="figures/site-icon-512.png?v=site-icon-1" type="image/png">
     <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=site-icon-1">
-    <link rel="stylesheet" href="assets/styles.css?v=theses-achievements-1">
+    <link rel="stylesheet" href="assets/styles.css?v=team-projects-1">
   </head>
   <body>
     <header class="site-header">
@@ -34,21 +34,33 @@
         <p class="section__eyebrow">Projects</p>
         <h1 id="projects-page-title">Code, experiments, and research artifacts</h1>
         <p>
-          Each card opens a short project page with a figure pulled from the
-          corresponding repository, a compact description, and a direct link to
-          the code.
+          My own project pages are separated from the team projects I lead in
+          BRAIn Lab. Every image is stored locally in this site repository.
         </p>
       </section>
 
       <section class="section" aria-label="Project list">
-        <div class="project-grid" data-project-grid></div>
+        <div class="project-subsection">
+          <div class="project-subsection__header">
+            <h2>My projects</h2>
+            <p>Personal research code, coursework experiments, libraries, and reproducible figures.</p>
+          </div>
+          <div class="project-grid" data-project-grid="personal"></div>
+        </div>
+        <div class="project-subsection">
+          <div class="project-subsection__header">
+            <h2>BRAIn Lab team projects</h2>
+            <p>Student-team research projects under my lead or supervision, with placeholders where public materials are not ready yet.</p>
+          </div>
+          <div class="project-grid" data-project-grid="team"></div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>&copy; 2026 Igor Ignashin</p>
     </footer>
-    <script src="assets/project-data.js?v=project-order-1"></script>
-    <script src="assets/project-page.js?v=project-order-1"></script>
+    <script src="assets/project-data.js?v=team-projects-1"></script>
+    <script src="assets/project-page.js?v=team-projects-1"></script>
   </body>
 </html>
