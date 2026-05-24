@@ -520,6 +520,25 @@ a:hover {
   margin-bottom: 18px;
 }
 
+.cv-panel ul {
+  margin: 0 0 18px;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.cv-panel li + li {
+  margin-top: 6px;
+}
+
+.cv-link-list a {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.cv-link-list a:hover {
+  color: var(--accent-strong);
+}
+
 .cv-panel__actions {
   align-content: start;
   align-items: start;
