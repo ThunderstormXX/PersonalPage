@@ -102,7 +102,7 @@
           <h1 id="project-title">${escapeHtml(project.title)}</h1>
           <p>${escapeHtml(project.summary)}</p>
           <div class="project-detail__actions">
-            <a class="button-link button-link--primary" href="${escapeHtml(project.repo)}" target="_blank" rel="noreferrer">Open GitHub</a>
+            <a class="button-link button-link--primary" href="${escapeHtml(project.repo)}" target="_blank" rel="noreferrer">Open repository</a>
             <a class="button-link" href="projects.html">All projects</a>
           </div>
         </div>
@@ -111,7 +111,7 @@
         </a>
         <div class="project-detail__body">
           <section>
-            <h2>Why it is interesting</h2>
+            <h2>Why it matters</h2>
             <p>${escapeHtml(project.details)}</p>
           </section>
           <section>

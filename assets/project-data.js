@@ -9,9 +9,9 @@ window.PROJECTS = [
     imageSource: "SGDiffusion/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/codex/exp9-local-minima/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     summary:
-      "Reproducible experiments for finite-step SGD dynamics, Langevin-type approximations, Fokker-Planck predictions, Hessian-basis diagnostics, and small neural-network validation.",
+      "Reproducible experiments for finite-step SGD dynamics: Langevin-style approximations, Fokker-Planck predictions, Hessian-basis diagnostics, and neural-network validation.",
     details:
-      "The repository backs the SGD dynamics paper workflow: configs, experiment runners, saved artifacts, figures, and clean reproduction commands for testing when Brownian-motion approximations fail.",
+      "This repository supports the SGD dynamics paper workflow with configs, experiment runners, saved artifacts, figures, and reproduction commands for testing where Brownian-motion approximations break down.",
     highlights: [
       "Finite-step SGD dynamics compared with Langevin-style surrogates.",
       "Hessian-basis and covariance diagnostics for real and toy models.",
@@ -29,9 +29,9 @@ window.PROJECTS = [
     imageSource: "Ridiculous-LLM-Compression/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/Ridiculous-LLM-Compression/blob/main/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
     summary:
-      "A pruning and healing library for large language models with LoRA fine-tuning, layer pruning, decoder search, and attention head merging experiments.",
+      "A library for pruning and healing large language models, with LoRA fine-tuning, layer pruning, decoder search, and attention-head merging experiments.",
     details:
-      "The code organizes layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into reusable scripts and library modules for compression experiments.",
+      "The code packages layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into reusable scripts and modules for compression experiments.",
     highlights: [
       "Layer pruning and LoRA-based healing workflows.",
       "Attention head merging analysis with layer-wise perplexity plots.",
@@ -48,9 +48,9 @@ window.PROJECTS = [
     imageSource: "Adversarial-Attacks/checkpoints/exp_1/figures/mean_std_accuracy.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/Adversarial-Attacks/blob/main/checkpoints/exp_1/figures/mean_std_accuracy.png",
     summary:
-      "Adversarial training experiments on attacked MNIST with adaptive weighting of attacks and comparisons between ALSO and AdamW training pipelines.",
+      "Adversarial-training experiments on attacked MNIST, with adaptive attack weighting and comparisons between ALSO and AdamW.",
     details:
-      "The experiment tracks how prioritizing harder attacks changes the average quality over epochs, using attacked MNIST, torchvision transforms, and FGSM-style pipelines.",
+      "The experiments track how prioritizing harder attacks changes average quality over epochs, using attacked MNIST, torchvision transforms, and FGSM-style pipelines.",
     highlights: [
       "Adaptive weighting over attack difficulty.",
       "ALSO versus AdamW training comparison.",
@@ -87,9 +87,9 @@ window.PROJECTS = [
     imageSource: "CFW-in-ML/notebooks/CFW_logregression.ipynb, Experiment 6",
     imageSourceUrl: "https://github.com/ThunderstormXX/CFW-in-ML/blob/main/notebooks/CFW_logregression.ipynb",
     summary:
-      "Implementations of FW, CFW, and NFW algorithms for binary classification in logistic regression models.",
+      "Implementations of FW, CFW, and NFW algorithms for binary classification with logistic-regression models.",
     details:
-      "The notebook-driven project compares Frank-Wolfe variants under different constraints and tracks convergence behavior for logistic regression experiments.",
+      "This notebook-driven project compares Frank-Wolfe variants under different constraints and tracks convergence behavior in logistic-regression experiments.",
     highlights: [
       "FW, CFW, and NFW implementations for logistic regression.",
       "MNIST and LIBSVM-style experimental setups.",
@@ -106,9 +106,9 @@ window.PROJECTS = [
     imageSource: "Methods-Optimization/homeworks/8sem/hw_1/hw1.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/Methods-Optimization/blob/main/homeworks/8sem/hw_1/hw1.ipynb",
     summary:
-      "Optimization methods coursework and experiments collected from applied mathematics studies.",
+      "Coursework and experiments in numerical optimization from applied mathematics studies.",
     details:
-      "The repository contains optimization assignments and comparative plots across constraints and methods, useful as a compact record of algorithmic experiments.",
+      "The repository contains optimization assignments and comparative plots across methods and constraints, forming a compact record of algorithmic experiments.",
     highlights: [
       "Nesterov acceleration with gamma = 1/L and different momentums.",
       "Heavy-ball, Newton, BFGS, and LBFGS comparisons.",
@@ -125,9 +125,9 @@ window.PROJECTS = [
     imageSource: "Reinforcement_learning/ml_advanced_hw/hw1/homework.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/Reinforcement_learning/blob/main/ml_advanced_hw/hw1/homework.ipynb",
     summary:
-      "Reinforcement learning assignments, experiments, implementation notes, and saved training artifacts.",
+      "Reinforcement learning assignments, experiment notebooks, implementation notes, and saved training artifacts.",
     details:
-      "The repository collects MDP, value iteration, deep Q-learning, actor-critic, and advanced ML homework materials, including videos and notebook outputs.",
+      "The repository covers MDPs, value iteration, deep Q-learning, actor-critic methods, and advanced ML coursework, including videos and notebook outputs.",
     highlights: [
       "Value and policy iteration assignments.",
       "Deep Q-learning notebooks and environment utilities.",
@@ -144,9 +144,9 @@ window.PROJECTS = [
     imageSource: "Computational-mathematics/All tasks/test.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/Computational-mathematics/blob/main/All%20tasks/test.ipynb",
     summary:
-      "Practical computational mathematics assignments with numerical tasks across interpolation, gradients, differential equations, and 3D plots.",
+      "Assignments in computational mathematics covering interpolation, gradients, differential equations, numerical error analysis, and 3D plots.",
     details:
-      "The notebooks cover practical numerical methods, from finite differences and interpolation to gradient descent and geometry-heavy computational tasks.",
+      "The notebooks cover practical numerical methods, from finite differences and interpolation to gradient descent and geometric computations.",
     highlights: [
       "Many notebook-based numerical experiments.",
       "Interpolation, differential equations, gradients, and numerical errors.",
@@ -163,12 +163,12 @@ window.PROJECTS = [
     imageSource: "MLNotes/MathForecast/Lab_work_2.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/MLNotes/blob/main/MathForecast/Lab_work_2.ipynb",
     summary:
-      "Notebooks and notes on stochastic processes, EM, GANs, NeuralODE, recommender systems, statistics, and time-series forecasting.",
+      "Notebooks and notes on stochastic processes, EM, GANs, Neural ODEs, recommender systems, statistics, and time-series forecasting.",
     details:
-      "MLNotes is a broad notebook collection: deep learning experiments, stochastic-process simulations, NeuralODE attempts, WGAN outputs, forecasting labs, and statistics work.",
+      "MLNotes is a broad notebook collection covering deep learning experiments, stochastic-process simulations, Neural ODE experiments, WGAN outputs, forecasting labs, and statistics work.",
     highlights: [
       "fMRI tensor decomposition and MathForecast lab notebooks.",
-      "WGAN, EM, NeuralODE, and stochastic-process notebooks.",
+      "WGAN, EM, Neural ODE, and stochastic-process notebooks.",
       "Visual outputs preserved directly in notebooks."
     ]
   },
@@ -182,9 +182,9 @@ window.PROJECTS = [
     imageSource: "MLFinance/surrogate_modeling.ipynb",
     imageSourceUrl: "https://github.com/ThunderstormXX/MLFinance/blob/main/surrogate_modeling.ipynb",
     summary:
-      "Neural-network surrogate modeling for Black-Scholes pricing and Greeks estimation.",
+      "Neural-network surrogate modeling for Black-Scholes pricing and Greek estimation.",
     details:
-      "The project trains a neural surrogate for Black-Scholes prices, samples synthetic data, compares targets, and checks whether Greeks estimated through the surrogate stay accurate.",
+      "The project trains a neural surrogate for Black-Scholes prices, samples synthetic data, compares targets, and tests whether Greeks estimated through the surrogate remain accurate.",
     highlights: [
       "Black-Scholes price approximation with a neural model.",
       "Greeks estimation from the learned surrogate.",
@@ -225,7 +225,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-nlhf.png",
     imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
     summary:
-      "A team project on preference-style and game-theoretic feedback pipelines for language-model alignment and model comparison.",
+      "A team project on preference-based and game-theoretic feedback pipelines for language-model alignment and model comparison.",
     status: "Repository link coming soon",
     action: "Details soon"
   },
@@ -248,7 +248,7 @@ window.TEAM_PROJECTS = [
     image: "figures/sgdiffusion-pca-trajectory-cloud.png",
     imageAlt: "PCA trajectory cloud from SGDiffusion local minima experiments",
     summary:
-      "A team research track around SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built on the SGDiffusion workflow.",
+      "A team research track on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion workflow.",
     status: "Project page",
     action: "Open project page"
   },
@@ -259,7 +259,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-optimization-flows.png",
     imageAlt: "Urban logistics route map with multiple agent trajectories and load labels",
     summary:
-      "A team project comparing algorithms for transportation-flow optimization and routing in urban logistics.",
+      "A team project comparing algorithms for transportation-flow optimization and urban-logistics routing.",
     status: "Repository link coming soon",
     action: "Details soon"
   }
