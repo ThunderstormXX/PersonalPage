@@ -20,6 +20,25 @@ window.PROJECTS = [
     featured: true
   },
   {
+    slug: "huawei-wireless-scheduling",
+    title: "AI for Wireless Resource Scheduling",
+    tag: "Wireless AI",
+    image: "figures/huawei-wireless-scheduling.png",
+    imageAlt: "Wireless cell with five user devices served by a base station",
+    imageSource: "Provided wireless scheduling schematic",
+    imageSourceUrl: "figures/huawei-wireless-scheduling.png",
+    summary:
+      "Research on AI-based optimization for radio-resource allocation in wireless networks, with a focus on improving a classical scheduling baseline.",
+    details:
+      "The project studies how users are assigned to resource blocks and cells, then builds interpretable modifications of the scheduling baseline and tests RL-based policies for selecting higher-quality scheduling actions under controlled runtime.",
+    highlights: [
+      "Analysis of user allocation across resource blocks and cells.",
+      "Modifications of a classical scheduling baseline while preserving interpretability.",
+      "RL-based scheduling-action selection aimed at improving allocation quality under runtime constraints."
+    ],
+    featured: true
+  },
+  {
     slug: "ridiculous-llm-compression",
     title: "Ridiculous-LLM-Compression",
     tag: "LLM compression",
@@ -268,6 +287,7 @@ window.TEAM_PROJECTS = [
 const priorityProjectOrder = [
   "sgdiffusion",
   "mlfinance",
+  "huawei-wireless-scheduling",
   "computational-mathematics",
   "relaxit",
   "mlnotes"

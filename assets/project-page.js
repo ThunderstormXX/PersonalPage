@@ -88,6 +88,10 @@
     const index = projects.indexOf(project);
     const previous = projects[(index - 1 + projects.length) % projects.length];
     const next = projects[(index + 1) % projects.length];
+    const repoAction = project.repo
+      ? `<a class="button-link button-link--primary" href="${escapeHtml(project.repo)}" target="_blank" rel="noreferrer">Open repository</a>`
+      : "";
+    const sourceUrl = project.imageSourceUrl || project.image;
 
     document.title = `${project.title} | Igor Ignashin`;
     const description = document.querySelector('meta[name="description"]');
@@ -102,11 +106,11 @@
           <h1 id="project-title">${escapeHtml(project.title)}</h1>
           <p>${escapeHtml(project.summary)}</p>
           <div class="project-detail__actions">
-            <a class="button-link button-link--primary" href="${escapeHtml(project.repo)}" target="_blank" rel="noreferrer">Open repository</a>
+            ${repoAction}
             <a class="button-link" href="projects.html">All projects</a>
           </div>
         </div>
-        <a class="project-detail__image" href="${escapeHtml(project.imageSourceUrl)}" target="_blank" rel="noreferrer">
+        <a class="project-detail__image" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">
           <img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt)}">
         </a>
         <div class="project-detail__body">
@@ -123,7 +127,7 @@
           <section class="project-source">
             <h2>Figure source</h2>
             <p>
-              <a href="${escapeHtml(project.imageSourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(project.imageSource)}</a>
+              <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(project.imageSource)}</a>
             </p>
           </section>
         </div>
