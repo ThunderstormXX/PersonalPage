@@ -173,6 +173,25 @@ window.PROJECTS = [
     ]
   },
   {
+    slug: "mmo-tm",
+    title: "mmo_tm",
+    tag: "Traffic assignment",
+    repo: "https://github.com/ThunderstormXX/mmo_tm",
+    image: "figures/mmo-tm-transport-results.png",
+    imageAlt: "Relative-gap convergence curves for traffic-assignment solvers on Berlin and Barcelona road graphs",
+    imageSource: "mmo_tm/experiments_results/for_paper/4-6_imgs.png",
+    imageSourceUrl: "https://github.com/ThunderstormXX/mmo_tm/blob/master/experiments_results/for_paper/4-6_imgs.png",
+    summary:
+      "Transportation-modeling research code for equilibrium traffic assignment and combined travel-demand problems on road-network graphs.",
+    details:
+      "My contribution is in adding and testing optimization solvers for traffic assignment: Frank-Wolfe variants, conjugate directions, stochastic correspondence methods, and experiment pipelines that compare relative-gap convergence across real road networks.",
+    highlights: [
+      "Added optimizer and solver variants for equilibrium transportation-flow assignment.",
+      "Experiment scripts compare solver behavior across road graphs such as Berlin and Barcelona.",
+      "Paper-oriented result figures track relative-gap convergence over runtime."
+    ]
+  },
+  {
     slug: "mlnotes",
     title: "MLNotes",
     tag: "ML notes",
@@ -289,6 +308,7 @@ const priorityProjectOrder = [
   "mlfinance",
   "huawei-wireless-scheduling",
   "computational-mathematics",
+  "mmo-tm",
   "relaxit",
   "mlnotes"
 ];
