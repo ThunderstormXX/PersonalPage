@@ -245,7 +245,8 @@ a:hover {
 .focus-grid article,
 .project-card,
 .cv-panel,
-.publication {
+.publication,
+.talk {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: rgb(255 255 255 / 0.82);
@@ -269,6 +270,7 @@ a:hover {
 .focus-grid h3,
 .project-card__title,
 .publication h3,
+.talk h3,
 .cv-panel h3 {
   margin: 0 0 8px;
   line-height: 1.25;
@@ -277,6 +279,7 @@ a:hover {
 .focus-grid p,
 .project-card__text,
 .publication p,
+.talk p,
 .cv-panel p {
   margin: 0;
   color: var(--muted);
@@ -297,6 +300,60 @@ a:hover {
 
 .publication p {
   font-size: 0.95rem;
+}
+
+.talk-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.talk {
+  padding: 18px 20px;
+}
+
+.talk__meta {
+  margin-bottom: 10px;
+  color: var(--accent-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.talk h3 {
+  font-size: 1.02rem;
+}
+
+.talk p {
+  font-size: 0.95rem;
+}
+
+.talk__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.talk__links a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--accent-strong);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 7px 11px;
+  text-decoration: none;
+}
+
+.talk__links a:hover {
+  border-color: rgb(8 124 137 / 0.45);
+  color: var(--accent-strong);
 }
 
 .project-subsection + .project-subsection {
@@ -633,6 +690,7 @@ a:hover {
   .project-card,
   .cv-panel,
   .publication,
+  .talk,
   .link-bar a,
   .cv-panel__actions a,
   .button-link,
@@ -686,6 +744,7 @@ a:hover {
   .project-subsection__header,
   .focus-grid,
   .project-grid,
+  .talk-list,
   .cv-panel,
   .project-detail__body,
   .project-nav {
