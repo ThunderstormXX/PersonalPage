@@ -283,8 +283,8 @@ window.TEAM_PROJECTS = [
     title: "SGDiffusion Team Track",
     tag: "BRAIn Lab team",
     href: "project.html?project=sgdiffusion",
-    image: "figures/sgdiffusion-pca-trajectory-cloud.png",
-    imageAlt: "PCA trajectory cloud from SGDiffusion local minima experiments",
+    image: "figures/team-sgdiffusion-variance-saturation.png",
+    imageAlt: "NanoGPT 6.6M variance saturation curves across Hessian eigendirections",
     summary:
       "A team research track on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion workflow.",
     status: "Project page",
