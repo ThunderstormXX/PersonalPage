@@ -91,6 +91,12 @@
     const repoAction = project.repo
       ? `<a class="button-link button-link--primary" href="${escapeHtml(project.repo)}" target="_blank" rel="noreferrer">Open repository</a>`
       : "";
+    const extraActions = (project.links || [])
+      .map(
+        (link) =>
+          `<a class="button-link" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`
+      )
+      .join("");
     const sourceUrl = project.imageSourceUrl || project.image;
 
     document.title = `${project.title} | Igor Ignashin`;
@@ -107,6 +113,7 @@
           <p>${escapeHtml(project.summary)}</p>
           <div class="project-detail__actions">
             ${repoAction}
+            ${extraActions}
             <a class="button-link" href="projects.html">All projects</a>
           </div>
         </div>

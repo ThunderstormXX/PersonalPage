@@ -47,6 +47,12 @@ window.PROJECTS = [
     imageAlt: "Perplexity impact of attention head merging by layer",
     imageSource: "Ridiculous-LLM-Compression/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/Ridiculous-LLM-Compression/blob/main/pollyleo_exps/exp1_changed/figures/perplexity_vs_layer.png",
+    links: [
+      {
+        label: "OpenReview",
+        url: "https://openreview.net/forum?id=KfuiwhQcJH&referrer=%5Bthe%20profile%20of%20Igor%20Ignashin%5D(%2Fprofile%3Fid%3D~Igor_Ignashin1)"
+      }
+    ],
     summary:
       "A library for pruning and healing large language models, with LoRA fine-tuning, layer pruning, decoder search, and attention-head merging experiments.",
     details:
