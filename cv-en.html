@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV | Igor Ignashin</title>
+    <meta
+      name="description"
+      content="Detailed English CV of Igor Ignashin: experience, concrete project work, and technical scope."
+    >
+    <meta property="og:title" content="CV | Igor Ignashin">
+    <meta property="og:description" content="Detailed experience and project work in English.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thunderstormxx.github.io/PersonalPage/figures/profile.png">
+    <link rel="icon" href="figures/site-icon-32.png?v=avatar-icon-1" sizes="32x32" type="image/png">
+    <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
+    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Site navigation">
+        <a class="site-brand" href="index.html">Igor Ignashin</a>
+        <div class="top-nav__links">
+          <a href="projects.html">Projects</a>
+          <a href="index.html#publications">Publications</a>
+          <a href="index.html#talks">Talks</a>
+          <a href="cv-en.html" aria-current="page">CV EN</a>
+          <a href="cv-ru.html">CV RU</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell subpage">
+      <section class="page-hero" aria-labelledby="cv-page-title">
+        <p class="section__eyebrow">CV / English</p>
+        <h1 id="cv-page-title">Detailed experience and project work</h1>
+        <p>
+          This page is intentionally more literal than a short PDF resume. It
+          describes what I actually implemented, what kinds of experiments I
+          ran, and where my contribution was infrastructure, evaluation,
+          theory, or project supervision.
+        </p>
+        <div class="lang-switch" aria-label="Language switch">
+          <a class="button-link button-link--primary" href="cv-en.html">English</a>
+          <a class="button-link" href="cv-ru.html">Русский</a>
+          <a class="button-link" href="index.html">Home</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="profile-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Profile</p>
+          <h2 id="profile-title">Current profile</h2>
+        </div>
+        <div class="note-card">
+          <p>
+            I am an M.S. candidate at MIPT working across optimization
+            research and practical ML systems. My strongest engineering work is
+            in experiment pipelines, evaluation, reproducibility, and
+            infrastructure around LLM training and inference ideas rather than
+            in large-scale production ownership of a single commercial system.
+          </p>
+          <p>
+            In project titles I sometimes have coordination responsibilities,
+            but the substance of my work is still hands-on: data preparation,
+            experiment setup, metrics, scripts, analysis, and reporting.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Experience</p>
+          <h2 id="experience-title">Research and industry work</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <div class="cv-entry__meta">2024 - 2026 | MIPT AI Institute / BRAIn Lab / MIRAI; ongoing collaboration with LAB MMO</div>
+            <h3>ML research and project supervision</h3>
+            <p>
+              My work there was mixed: part hands-on implementation, part
+              experiment design and technical supervision of small student
+              tracks. The most relevant applied work is below.
+            </p>
+            <div class="cv-entry__projects">
+              <section class="cv-entry__project">
+                <h4>LLM post-training pipeline</h4>
+                <p>
+                  Built and maintained a workflow for teacher-generated math
+                  data, parsing grader and reward outputs, preparing JSONL
+                  datasets, running SFT and KL-distillation style experiments,
+                  and producing benchmark tables. The contribution is mainly in
+                  data/eval pipeline construction and reproducible runs, not in
+                  claiming a novel foundation-model architecture.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>vLLM early-exit and adaptive-decoding evaluation</h4>
+                <p>
+                  Set up offline multi-GPU evaluation for early-exit ideas:
+                  deterministic sharding, resumable JSONL outputs, merge and
+                  progress scripts, and comparable benchmark runs. The core
+                  value of this work is reliable experimentation and result
+                  comparison under long-running inference workloads.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>Wireless resource allocation</h4>
+                <p>
+                  Worked on training and evaluation around a strong
+                  deterministic baseline. My part was feature
+                  handling, training/eval loops, and baseline comparison. Final
+                  validation was done in a partner-side simulator; I did not
+                  build the simulator or production deployment layer.
+                </p>
+              </section>
+            </div>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">Jan 2026 - Mar 2026 | MBZUAI</div>
+            <h3>Visiting research student</h3>
+            <p>
+              Focused on theory for LMO-based optimization methods and
+              acceleration schemes, including analyses connected to Muon and
+              Lookahead-type ideas. This period was mostly theoretical work
+              rather than data or systems engineering.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">2025 - present | Collaboration with Andrei Leonidov's group</div>
+            <h3>SGD dynamics and multi-agent RL</h3>
+            <p>
+              Worked on theoretical framing and experiments for SGD noise and
+              finite-step behavior, plus related multi-agent reinforcement
+              learning topics. The practical output is experiment code, figure
+              generation, and paper-oriented analysis rather than a standalone
+              deployed product.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">Earlier role | Yandex</div>
+            <h3>Data Analyst Intern</h3>
+            <p>
+              Worked with internal data tools and analytics workflows. This is
+              relevant mainly as background in data work and business-facing
+              analysis rather than as a core LLM role.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Selected Projects</p>
+          <h2 id="projects-title">What the project work actually looks like</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>SGDiffusion</h3>
+            <p>
+              A repository for finite-step SGD experiments. I use it to run
+              controlled trajectory experiments, compare them against
+              Langevin-style approximations, inspect Hessian-basis behavior, and
+              regenerate paper figures. This is experiment and analysis code,
+              not a productized training framework.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>Ridiculous-LLM-Compression</h3>
+            <p>
+              Working code for compression experiments: layer pruning, healing
+              fine-tuning, decoder search, and attention-head merging. The goal
+              is to test structural changes and recovery procedures, then track
+              perplexity and downstream behavior. The repository is an
+              experimental workbench more than a polished public library.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>mmo_tm and related traffic-assignment work</h3>
+            <p>
+              Solver implementations and experiment pipelines for equilibrium
+              traffic assignment on real road graphs. My contribution is in
+              optimization methods, experiment setup, and convergence
+              comparison, not in GIS or frontend systems.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>Resource allocation project</h3>
+            <p>
+              A learned component evaluated against a strong deterministic
+              baseline under external simulation constraints. The main
+              engineering work is preparing features, training loops,
+              evaluation runs, and comparison reports that can be checked by a
+              partner team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="education-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Education</p>
+          <h2 id="education-title">University and thesis work</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>MIPT, Applied Mathematics and Informatics</h3>
+            <p>
+              B.S. in Applied Mathematics and Physics. Current M.S. candidate
+              in the Department of Intelligent Data Analysis.
+            </p>
+            <ul>
+              <li><a href="https://github.com/intsystems/Ignashin-BS-Thesis" target="_blank" rel="noreferrer">B.S. thesis repository</a></li>
+              <li><a href="https://github.com/intsystems/Ignashin_MS_thesis" target="_blank" rel="noreferrer">M.S. thesis repository</a></li>
+            </ul>
+          </article>
+          <article class="cv-entry">
+            <h3>School olympiads</h3>
+            <ul>
+              <li>Winner, Phystech Mathematics Olympiad.</li>
+              <li>Winner, Step into the Future Olympiads in Mathematics and Physics.</li>
+              <li>Winner, KFU Interregional Mathematics Olympiad.</li>
+              <li>Winner, municipal stage of the All-Russian School Olympiad in Mathematics.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Skills</p>
+          <h2 id="skills-title">Technical scope</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>Languages and tooling</h3>
+            <p>Python, C++, SQL, Linux, Git, JSONL data workflows, multi-GPU server workflows.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>ML and LLM work</h3>
+            <p>PyTorch, JAX, vLLM, Hugging Face workflows, SFT, teacher/KL distillation, reward parsing, evaluation pipelines, RL.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>Math and optimization</h3>
+            <p>Convex and nonconvex optimization, stochastic processes, minimax problems, traffic assignment, SGD dynamics.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>Data systems</h3>
+            <p>YQL, DataLens, Nirvana, experiment tracking through scripts and artifacts rather than heavyweight MLOps platforms.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Igor Ignashin</p>
+    </footer>
+  </body>
+</html>

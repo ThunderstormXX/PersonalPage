@@ -19,7 +19,7 @@
     <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
     <link rel="preconnect" href="https://github.com">
-    <link rel="stylesheet" href="assets/styles.css?v=talks-media-1">
+    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
   </head>
   <body>
     <header class="site-header">
@@ -29,7 +29,8 @@
           <a href="projects.html">Projects</a>
           <a href="index.html#publications">Publications</a>
           <a href="index.html#talks">Talks</a>
-          <a href="index.html#cv">CV</a>
+          <a href="cv-en.html">CV EN</a>
+          <a href="cv-ru.html">CV RU</a>
         </div>
       </nav>
     </header>
@@ -44,7 +45,7 @@
           height="136"
         >
         <h1 id="page-title">Igor Ignashin</h1>
-        <p class="profile__role">Research Lead in Machine Learning and Optimization</p>
+        <p class="profile__role">ML researcher working on optimization and LLM pipelines</p>
 
         <div class="profile__summary">
           <p>
@@ -53,24 +54,29 @@
             Department of Intelligent Data Analysis.
           </p>
           <p>
-            My work focuses on machine learning optimization, stochastic
-            dynamics of SGD, LLM post-training, SFT and teacher distillation,
-            inference acceleration, minimax optimization, and applied traffic
-            assignment.
+            My work is split between optimization research and practical ML
+            systems. On the research side, I work on SGD dynamics, minimax and
+            LMO-based optimization, and traffic-assignment models. On the
+            systems side, I build training and evaluation pipelines for LLM
+            post-training and inference experiments.
           </p>
           <p>
-            I work as a Research Lead at
+            Previously, at
+            MIPT AI Institute /
             <a href="https://miriai.org/" target="_blank" rel="noreferrer">BRAIn Lab / MIRAI</a>
             under the supervision of
             <a href="https://www.hse.ru/org/persons/444324804/" target="_blank" rel="noreferrer">Alexander Beznosikov</a>,
-            collaborate with
+            I worked on teacher-generated math data for LLM post-training,
+            reward parsing, SFT/KL-distillation experiments, benchmark
+            reporting, and offline evaluation of early-exit/adaptive decoding ideas
+            in vLLM. I also collaborate with
             <a href="https://www.hse.ru/org/persons/803294898/" target="_blank" rel="noreferrer">Demyan Yarmoshik</a>
             at
             <a href="https://labmmo.ru/" target="_blank" rel="noreferrer">LAB MMO</a>
             in
             <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87" target="_blank" rel="noreferrer">Alexander Gasnikov's</a>
-            research group, and recently worked as a visiting research student
-            at MBZUAI under
+            group. I recently also worked as a visiting research student at
+            MBZUAI under
             <a href="https://scholar.google.com/citations?user=QPVriwoAAAAJ&amp;hl=ru&amp;oi=ao" target="_blank" rel="noreferrer">Eduard Gorbunov</a>.
           </p>
           <p>
@@ -89,14 +95,15 @@
           <a href="#talks">Talks</a>
           <a href="projects.html">Projects</a>
           <a href="#cv">Theses</a>
-          <a href="assets/igor_ignashin_cv.pdf?v=cv-pretrain-sft-1">CV</a>
+          <a href="cv-en.html">CV (EN)</a>
+          <a href="cv-ru.html">CV (RU)</a>
         </nav>
       </section>
 
       <section class="section" id="focus" aria-labelledby="focus-title">
         <div class="section__header">
           <p class="section__eyebrow">Research Focus</p>
-          <h2 id="focus-title">Optimization, learning dynamics, and reliable ML systems</h2>
+          <h2 id="focus-title">Optimization, stochastic dynamics, and practical ML systems</h2>
         </div>
         <div class="focus-grid" aria-label="Research focus areas">
           <article>
@@ -222,6 +229,19 @@
             </div>
           </article>
           <article class="talk">
+            <div class="talk__meta">Conference abstract - MIPT 2026</div>
+            <h3>Decentralized block-coordinate conditional gradient method</h3>
+            <p>
+              Abstract at the 68th All-Russian Scientific Conference of MIPT,
+              in the mathematical foundations of control section. The work
+              discusses stochastic decentralized optimization with conditional
+              gradient methods and block-coordinate Frank-Wolfe modifications.
+            </p>
+            <div class="talk__links">
+              <a href="https://conf.mipt.ru/view/conference/view_division/3655841" target="_blank" rel="noreferrer">Program</a>
+            </div>
+          </article>
+          <article class="talk">
             <div class="talk__meta">Conference presentation - TFN-2025</div>
             <h3>Stochastic Origin Frank-Wolfe for Traffic Assignment</h3>
             <p>
@@ -274,7 +294,7 @@
         <div class="project-subsection">
           <div class="project-subsection__header">
             <h3>BRAIn Lab team projects</h3>
-            <p>Projects I lead or supervise with student teams; public links are shown once the repository is ready.</p>
+            <p>Projects I have led or supervised with student teams; public links are shown once the repository is ready.</p>
           </div>
           <div class="project-grid" data-project-grid="team"></div>
         </div>
@@ -286,7 +306,7 @@
       <section class="section" id="cv" aria-labelledby="cv-title">
         <div class="section__header">
           <p class="section__eyebrow">CV</p>
-          <h2 id="cv-title">Experience and education</h2>
+          <h2 id="cv-title">Experience, education, and selected project work</h2>
         </div>
         <div class="cv-panel">
           <div class="cv-panel__content">
@@ -295,9 +315,28 @@
               B.S. in Applied Mathematics and Physics; currently an M.S.
               candidate in the Department of Intelligent Data Analysis.
             </p>
-            <h3>Research and industry</h3>
+            <h3>Current work</h3>
             <p>
-              Research Lead at
+              My work is split between hands-on coding, experiment design, and
+              supervision of small project tracks. The most relevant practical
+              work for ML/LLM roles is:
+            </p>
+            <ul class="cv-list">
+              <li>
+                LLM post-training pipelines: preparing teacher-generated math
+                datasets, parsing grader/reward outputs, running SFT/KL-style
+                experiments, and producing reproducible benchmark tables.
+              </li>
+              <li>
+                vLLM-based inference evaluation: setting up deterministic
+                multi-GPU offline runs, resumable JSONL outputs, and comparison
+                scripts for early-exit and adaptive decoding ideas.
+              </li>
+            </ul>
+            <h3>Research affiliations</h3>
+            <p>
+              I previously worked at
+              MIPT AI Institute /
               <a href="https://miriai.org/" target="_blank" rel="noreferrer">BRAIn Lab / MIRAI</a>
               under
               <a href="https://www.hse.ru/org/persons/444324804/" target="_blank" rel="noreferrer">Alexander Beznosikov</a>;
@@ -308,10 +347,6 @@
               <a href="https://labmmo.ru/" target="_blank" rel="noreferrer">LAB MMO</a>;
               Visiting Research Student at MBZUAI under
               <a href="https://scholar.google.com/citations?user=QPVriwoAAAAJ&amp;hl=ru&amp;oi=ao" target="_blank" rel="noreferrer">Eduard Gorbunov</a>;
-              current work on LLM post-training and inference acceleration,
-              including Qwen/DeepScaleR teacher-SFT, RLVR/GRPO-style math
-              training, reward parsing, benchmark reporting, and vLLM
-              early-exit/adaptive decoding pipelines;
               work on SGD analysis and multi-agent reinforcement learning with
               <a href="https://scholar.google.com/citations?user=RNnvD3wAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Andrei Leonidov's</a>
               team; former Data Analyst Intern at Yandex.
@@ -338,16 +373,17 @@
             </ul>
             <h3>Technical stack</h3>
             <p>
-              Python, C++, SQL, PyTorch, JAX, vLLM, TRL, Hugging Face workflows,
-              SFT, teacher distillation, RLVR/GRPO-style training,
+              Python, C++, SQL, PyTorch, JAX, vLLM, Hugging Face workflows,
+              SFT, teacher/KL distillation, reward parsing,
               reinforcement learning, LLMs, convex and nonconvex optimization,
               stochastic processes, multi-GPU server workflows, Linux, Git,
               YQL, DataLens, and Nirvana.
             </p>
           </div>
           <div class="cv-panel__actions" aria-label="CV actions">
-            <a href="assets/igor_ignashin_cv.pdf?v=cv-pretrain-sft-1">Download CV</a>
-            <a href="my_files/english_cv.tex">LaTeX source</a>
+            <a href="cv-en.html">Detailed CV (EN)</a>
+            <a href="cv-ru.html">CV на русском</a>
+            <a href="projects.html">Project pages</a>
           </div>
         </div>
       </section>
@@ -356,7 +392,7 @@
     <footer class="site-footer">
       <p>&copy; 2026 Igor Ignashin</p>
     </footer>
-    <script src="assets/project-data.js?v=ridiculous-openreview-1"></script>
-    <script src="assets/project-page.js?v=ridiculous-openreview-1"></script>
+    <script src="assets/project-data.js?v=project-copy-2"></script>
+    <script src="assets/project-page.js?v=project-copy-2"></script>
   </body>
 </html>

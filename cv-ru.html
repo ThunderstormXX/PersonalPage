@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV | Игорь Игнашин</title>
+    <meta
+      name="description"
+      content="Подробная русская версия CV Игоря Игнашина: опыт, конкретные проекты и техническая зона ответственности."
+    >
+    <meta property="og:title" content="CV | Игорь Игнашин">
+    <meta property="og:description" content="Подробный опыт и описание проектной работы на русском языке.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thunderstormxx.github.io/PersonalPage/figures/profile.png">
+    <link rel="icon" href="figures/site-icon-32.png?v=avatar-icon-1" sizes="32x32" type="image/png">
+    <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
+    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav" aria-label="Навигация по сайту">
+        <a class="site-brand" href="index.html">Igor Ignashin</a>
+        <div class="top-nav__links">
+          <a href="projects.html">Projects</a>
+          <a href="index.html#publications">Publications</a>
+          <a href="index.html#talks">Talks</a>
+          <a href="cv-en.html">CV EN</a>
+          <a href="cv-ru.html" aria-current="page">CV RU</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell subpage">
+      <section class="page-hero" aria-labelledby="cv-page-title">
+        <p class="section__eyebrow">CV / Русский</p>
+        <h1 id="cv-page-title">Подробный опыт и проектная работа</h1>
+        <p>
+          Эта страница намеренно написана более буквально, чем короткое PDF
+          резюме. Здесь я описываю, что именно делал руками, где строил
+          пайплайны и эксперименты, а где мой вклад был скорее в постановке,
+          анализе и техническом сопровождении проекта.
+        </p>
+        <div class="lang-switch" aria-label="Переключение языка">
+          <a class="button-link" href="cv-en.html">English</a>
+          <a class="button-link button-link--primary" href="cv-ru.html">Русский</a>
+          <a class="button-link" href="index.html">Home</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="profile-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Профиль</p>
+          <h2 id="profile-title">Текущий фокус</h2>
+        </div>
+        <div class="note-card">
+          <p>
+            Я учусь в магистратуре МФТИ и работаю на стыке теории оптимизации и
+            практических ML/LLM-систем. Моя сильная сторона в инженерной части
+            — это не "продуктовая ownership-роль огромной системы", а
+            построение экспериментальных и оценочных пайплайнов, воспроизводимость,
+            анализ результатов и инфраструктура вокруг LLM-обучения и inference-идей.
+          </p>
+          <p>
+            В названиях ролей у меня иногда есть координационная составляющая,
+            но по содержанию работа в основном hands-on: данные, скрипты,
+            прогоны, метрики, анализ, отчеты и техсопровождение небольших
+            исследовательских треков.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Опыт</p>
+          <h2 id="experience-title">Исследовательская и прикладная работа</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <div class="cv-entry__meta">2024 - 2026 | ИИИ МФТИ / BRAIn Lab / MIRAI; текущая коллаборация с LAB MMO</div>
+            <h3>ML-исследования и техническое сопровождение проектных треков</h3>
+            <p>
+              Здесь у меня была смешанная роль: часть работы — руками писать код и
+              ставить эксперименты, часть — проектировать контур экспериментов и
+              технически сопровождать небольшие студенческие треки. Наиболее
+              прикладные куски выглядят так.
+            </p>
+            <div class="cv-entry__projects">
+              <section class="cv-entry__project">
+                <h4>Пайплайн post-training для LLM</h4>
+                <p>
+                  Собирал и поддерживал workflow для teacher-generated math
+                  data: генерация и подготовка данных, парсинг grader/reward
+                  outputs, сборка JSONL-датасетов, SFT и KL-distillation style
+                  эксперименты, а также benchmark-таблицы и воспроизводимые
+                  прогоны. Основной вклад здесь — data/eval pipeline и
+                  воспроизводимость, а не заявление о новой архитектуре базовой
+                  модели.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>Оценка early-exit и adaptive decoding в vLLM</h4>
+                <p>
+                  Настраивал offline multi-GPU evaluation для идей раннего
+                  выхода: deterministic sharding, resumable JSONL outputs,
+                  merge/progress scripts и сопоставимые benchmark-прогоны.
+                  Главная ценность этой работы — надежная экспериментальная
+                  инфраструктура и честное сравнение результатов на длинных
+                  inference-запусках.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>Ресурсный скедулинг в беспроводных сетях</h4>
+                <p>
+                  Работал над обучением и оценкой learned-компоненты поверх
+                  сильного детерминированного baseline. Моя часть —
+                  это признаки, training/eval loops и сравнение с baseline.
+                  Финальная валидация проводилась в simulator-е на стороне
+                  партнера; сам симулятор и production deployment не были моей
+                  работой.
+                </p>
+              </section>
+            </div>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">янв. 2026 - мар. 2026 | MBZUAI</div>
+            <h3>Visiting research student</h3>
+            <p>
+              Фокусировался на теории LMO-based optimization methods и схемах
+              ускорения, в том числе на анализах, связанных с Muon и
+              Lookahead-type идеями. Это был в первую очередь теоретический
+              период, а не data/systems engineering.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">2025 - н.в. | Коллаборация с группой Андрея Леонидова</div>
+            <h3>Динамика SGD и multi-agent RL</h3>
+            <p>
+              Работаю над теоретической постановкой и экспериментами по шуму SGD
+              и его конечному шагу, а также над смежными темами в multi-agent
+              reinforcement learning. Практический результат здесь — код
+              экспериментов, генерация фигур и анализ под статьи, а не готовый
+              прикладной продукт.
+            </p>
+          </article>
+
+          <article class="cv-entry">
+            <div class="cv-entry__meta">Более ранний этап | Яндекс</div>
+            <h3>Data Analyst Intern</h3>
+            <p>
+              Работал с внутренними аналитическими инструментами и
+              data-workflows. Этот опыт важен скорее как база по работе с
+              данными и бизнесовыми запросами, чем как центральная LLM-роль.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Проекты</p>
+          <h2 id="projects-title">Как выглядит моя проектная работа по сути</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>SGDiffusion</h3>
+            <p>
+              Репозиторий для finite-step SGD экспериментов. Использую его,
+              чтобы запускать контролируемые траектории, сравнивать их с
+              Langevin-style аппроксимациями, смотреть на поведение в
+              Hessian-basis и воспроизводить paper figures. Это исследовательский
+              код и анализ, а не production training framework.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>Ridiculous-LLM-Compression</h3>
+            <p>
+              Рабочий код для compression-экспериментов: layer pruning, healing
+              fine-tuning, decoder search, attention-head merging. Цель —
+              тестировать структурные изменения модели и процедуры
+              восстановления качества, затем смотреть на perplexity и
+              downstream behavior. Это скорее экспериментальная мастерская, чем
+              отполированная публичная библиотека.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>mmo_tm и задачи traffic assignment</h3>
+            <p>
+              Реализации solvers и пайплайны экспериментов для equilibrium
+              traffic assignment на реальных дорожных графах. Мой вклад здесь —
+              optimization methods, постановка и прогон экспериментов,
+              сравнение сходимости; это не GIS и не frontend.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>Проект по resource allocation</h3>
+            <p>
+              Learned-компонента, которая оценивается против сильного
+              детерминированного baseline в условиях внешнего simulator-а.
+              Главная инженерная работа — подготовка признаков, training loops,
+              evaluation runs и отчеты, которые может проверить команда
+              партнера.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="education-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Образование</p>
+          <h2 id="education-title">Университет и thesis work</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>МФТИ, прикладная математика и информатика</h3>
+            <p>
+              Бакалавриат по Applied Mathematics and Physics. Сейчас магистратура
+              на кафедре Intelligent Data Analysis.
+            </p>
+            <ul>
+              <li><a href="https://github.com/intsystems/Ignashin-BS-Thesis" target="_blank" rel="noreferrer">B.S. thesis repository</a></li>
+              <li><a href="https://github.com/intsystems/Ignashin_MS_thesis" target="_blank" rel="noreferrer">M.S. thesis repository</a></li>
+            </ul>
+          </article>
+          <article class="cv-entry">
+            <h3>Школьные олимпиады</h3>
+            <ul>
+              <li>Победитель Физтех-олимпиады по математике.</li>
+              <li>Победитель олимпиад «Шаг в будущее» по математике и физике.</li>
+              <li>Победитель межрегиональной олимпиады КФУ по математике.</li>
+              <li>Победитель муниципального этапа Всероссийской олимпиады школьников по математике.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section__header">
+          <p class="section__eyebrow">Стек</p>
+          <h2 id="skills-title">Техническая зона ответственности</h2>
+        </div>
+        <div class="cv-entry-list">
+          <article class="cv-entry">
+            <h3>Языки и инструменты</h3>
+            <p>Python, C++, SQL, Linux, Git, JSONL data workflows, multi-GPU server workflows.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>ML и LLM работа</h3>
+            <p>PyTorch, JAX, vLLM, Hugging Face workflows, SFT, teacher/KL distillation, reward parsing, evaluation pipelines, RL.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>Математика и оптимизация</h3>
+            <p>Convex and nonconvex optimization, stochastic processes, minimax problems, traffic assignment, SGD dynamics.</p>
+          </article>
+          <article class="cv-entry">
+            <h3>Data systems</h3>
+            <p>YQL, DataLens, Nirvana, tracking экспериментов через скрипты и артефакты, а не через тяжелые MLOps-платформы.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Igor Ignashin</p>
+    </footer>
+  </body>
+</html>

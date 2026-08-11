@@ -9,32 +9,13 @@ window.PROJECTS = [
     imageSource: "SGDiffusion/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     imageSourceUrl: "https://github.com/ThunderstormXX/SGDiffusion/blob/codex/exp9-local-minima/src/scripts/exp8/figures/from_pretrained_point/pca_trajectory_cloud.png",
     summary:
-      "Reproducible experiments for finite-step SGD dynamics: Langevin-style approximations, Fokker-Planck predictions, Hessian-basis diagnostics, and neural-network validation.",
+      "Experiment code for finite-step SGD dynamics: controlled trajectories, Langevin-style comparisons, Hessian-basis diagnostics, and figure generation.",
     details:
-      "This repository supports the SGD dynamics paper workflow with configs, experiment runners, saved artifacts, figures, and reproduction commands for testing where Brownian-motion approximations break down.",
+      "This repository is the working codebase behind the SGD dynamics paper: configs, runners, saved artifacts, and scripts for checking where Brownian-style approximations stop matching finite-step SGD.",
     highlights: [
       "Finite-step SGD dynamics compared with Langevin-style surrogates.",
       "Hessian-basis and covariance diagnostics for real and toy models.",
       "Paper-ready experiment catalog with smoke and full configurations."
-    ],
-    featured: true
-  },
-  {
-    slug: "huawei-wireless-scheduling",
-    title: "AI for Wireless Resource Scheduling",
-    tag: "Wireless AI",
-    image: "figures/huawei-wireless-scheduling.png",
-    imageAlt: "Wireless cell with five user devices served by a base station",
-    imageSource: "Provided wireless scheduling schematic",
-    imageSourceUrl: "figures/huawei-wireless-scheduling.png",
-    summary:
-      "Research on AI-based optimization for radio-resource allocation in wireless networks, with a focus on improving a classical scheduling baseline.",
-    details:
-      "The project studies how users are assigned to resource blocks and cells, then builds interpretable modifications of the scheduling baseline and tests RL-based policies for selecting higher-quality scheduling actions under controlled runtime.",
-    highlights: [
-      "Analysis of user allocation across resource blocks and cells.",
-      "Modifications of a classical scheduling baseline while preserving interpretability.",
-      "RL-based scheduling-action selection aimed at improving allocation quality under runtime constraints."
     ],
     featured: true
   },
@@ -54,9 +35,9 @@ window.PROJECTS = [
       }
     ],
     summary:
-      "A library for pruning and healing large language models, with LoRA fine-tuning, layer pruning, decoder search, and attention-head merging experiments.",
+      "Working code for LLM compression experiments: layer pruning, healing fine-tuning, decoder search, and attention-head merging.",
     details:
-      "The code packages layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into reusable scripts and modules for compression experiments.",
+      "This repository is an experiment workbench rather than a polished product library. It packages layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into scripts and modules that can be reused across compression ablations.",
     highlights: [
       "Layer pruning and LoRA-based healing workflows.",
       "Attention head merging analysis with layer-wise perplexity plots.",
@@ -246,7 +227,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-llm-compression.svg",
     imageAlt: "Schematic preview of an LLM compression and distillation pipeline",
     summary:
-      "A team framework for studying LLM compression methods: quantization, knowledge distillation, layer pruning, KV-cache optimization, and reproducible evaluation.",
+      "A student-team research track on LLM compression methods: quantization, distillation, layer pruning, KV-cache ideas, and reproducible evaluation.",
     status: "Public repository",
     action: "Open repository"
   },
@@ -258,7 +239,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-theory-games.png",
     imageAlt: "Cooperation-rate trajectories in game-theoretic reinforcement learning experiments",
     summary:
-      "A team project combining Q-learning, neural reinforcement learning agents, and LLM-agent experiments for game-theoretic social dilemmas.",
+      "A student-team project on Q-learning, neural RL agents, and LLM-agent experiments for game-theoretic social-dilemma settings.",
     status: "Public repository",
     action: "Open repository"
   },
@@ -269,7 +250,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-nlhf.png",
     imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
     summary:
-      "A team project on preference-based and game-theoretic feedback pipelines for language-model alignment and model comparison.",
+      "A student-team project on preference-style and game-theoretic feedback pipelines for language-model alignment and model comparison.",
     status: "Repository link coming soon",
     action: "Details soon"
   },
@@ -280,7 +261,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-early-exit.svg",
     imageAlt: "Schematic preview of early-exit language-model inference with aligners and an adapter",
     summary:
-      "An early-exit LLM training project where intermediate layers are aligned to the final layer, while an adapter learns when inference can stop.",
+      "A team project on early-exit LLM training, with intermediate-layer alignment and an adapter that predicts when generation can stop.",
     status: "Repository link coming soon",
     action: "Details soon"
   },
@@ -292,7 +273,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-sgdiffusion-variance-saturation.png",
     imageAlt: "NanoGPT 6.6M variance saturation curves across Hessian eigendirections",
     summary:
-      "A team research track on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion workflow.",
+      "A team research track on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion codebase.",
     status: "Project page",
     action: "Open project page"
   },
@@ -303,7 +284,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-optimization-flows.png",
     imageAlt: "Urban logistics route map with multiple agent trajectories and load labels",
     summary:
-      "A team project comparing algorithms for transportation-flow optimization and urban-logistics routing.",
+      "A team project comparing optimization algorithms for transportation-flow problems and urban-logistics routing.",
     status: "Repository link coming soon",
     action: "Details soon"
   }
@@ -312,7 +293,6 @@ window.TEAM_PROJECTS = [
 const priorityProjectOrder = [
   "sgdiffusion",
   "mlfinance",
-  "huawei-wireless-scheduling",
   "computational-mathematics",
   "mmo-tm",
   "relaxit",

@@ -1,0 +1,13 @@
+.DS_Store
+
+# Local interview/prep artifacts, not part of the public GitHub Pages site.
+dl_interview_drills/
+output/
+moe_checkpoints_fast3ep/
+qwen_token_cache_local/
+personal_page_gigaprompt.txt
+
+# Local model/checkpoint artifacts.
+*.pt
+*.pth
+*.ckpt
