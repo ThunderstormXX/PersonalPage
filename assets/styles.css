@@ -201,15 +201,6 @@ a:hover {
   color: #ffffff;
 }
 
-.button-link--download {
-  border-color: rgb(163 58 43 / 0.32);
-  color: var(--accent-warm);
-}
-
-.button-link--download:hover {
-  color: var(--accent-warm);
-}
-
 .section {
   scroll-margin-top: 78px;
   padding: 52px 0;
@@ -681,16 +672,6 @@ a:hover {
 
 .note-card p + p {
   margin-top: 12px;
-}
-
-.note-card ul {
-  margin: 14px 0 0;
-  padding-left: 20px;
-  color: var(--muted);
-}
-
-.note-card li + li {
-  margin-top: 6px;
 }
 
 .cv-entry-list {
