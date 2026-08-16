@@ -1,5 +1,54 @@
 window.PROJECTS = [
   {
+    slug: "qwen-deepscaler-distillation",
+    title: "Qwen / DeepScaleR Math Distillation",
+    tag: "LLM post-training",
+    image: "figures/team-llm-compression.svg",
+    imageAlt: "Schematic preview of an LLM data, distillation, and evaluation pipeline",
+    imageSource: "Local schematic used for the BRAIn Lab LLM compression and evaluation track",
+    imageSourceUrl: "figures/team-llm-compression.svg",
+    links: [
+      {
+        label: "Teacher40k dataset",
+        url: "https://huggingface.co/datasets/ThunderstormXXL/deepscaler-teacher-sft-vllm-official-40k"
+      },
+      {
+        label: "Clean v4 dataset",
+        url: "https://huggingface.co/datasets/ThunderstormXXL/deepscaler-teacher-sft-vllm-official-40k-clean-v4-conceptual"
+      }
+    ],
+    summary:
+      "End-to-end math LLM distillation case: 40.3k teacher CoT traces, SFT/Forward-KL training, five math benchmarks, and macro Pass@1 46.97 -> 54.45 against a 55.90 local RL teacher.",
+    details:
+      "This is the strongest applied post-training case on the site. The goal was to transfer a large part of the DeepScaleR RL improvement back into the Qwen-based student through teacher-generated chain-of-thought data and distillation. The workflow covered teacher generation, reward/grader parsing, cleaning, SFT and Forward-KL training, and comparable evaluation against base and teacher checkpoints.",
+    highlights: [
+      "Student/base: DeepSeek-R1-Distill-Qwen-1.5B; teacher: DeepScaleR-1.5B-Preview.",
+      "40,300 teacher traces: 39,494 train and 806 validation; clean v4 kept 35,632 examples.",
+      "Macro Pass@1 improved from 46.97 to 54.45 on AIME 2024, MATH500, AMC 2023, Minerva Math, and OlympiadBench; local RL teacher was 55.90."
+    ],
+    featured: true
+  },
+  {
+    slug: "heterocrossplay-nlhf",
+    title: "HeteroCrossPlay / NLHF",
+    tag: "Multi-agent RL",
+    repo: "https://github.com/vskates/HeteroCrossPlay",
+    image: "figures/team-nlhf.png",
+    imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
+    imageSource: "Local NLHF / tournament-style evaluation preview",
+    imageSourceUrl: "figures/team-nlhf.png",
+    summary:
+      "Research prototype for preference learning where chosen/rejected pairs come from cross-play between models rather than only a static preference dataset.",
+    details:
+      "The idea is to study preference-based LLM training in a non-stationary environment: two heterogeneous policies answer the same prompt, a verifier or judge scores both responses, the winner/loser pair becomes preference data, and each policy is updated against its own frozen reference. I position this as a research prototype, not as a completed SOTA result.",
+    highlights: [
+      "Modified VERL recipe for heterogeneous multi-agent training with separate policies, tokenizers, and frozen anchors.",
+      "Verifier-based reward framing for GSM8K-style exact/parseable/dense answer scoring.",
+      "Compared conceptually against self-play, static DPO, PPO, and GRPO-style online preference optimization."
+    ],
+    featured: true
+  },
+  {
     slug: "sgdiffusion",
     title: "SGDiffusion",
     tag: "SGD dynamics",
@@ -35,13 +84,32 @@ window.PROJECTS = [
       }
     ],
     summary:
-      "Working code for LLM compression experiments: layer pruning, healing fine-tuning, decoder search, and attention-head merging.",
+      "Working code for LLM compression experiments: layer pruning, LoRA-based healing, decoder search, attention-head merging, and layer-wise evaluation.",
     details:
-      "This repository is an experiment workbench rather than a polished product library. It packages layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into scripts and modules that can be reused across compression ablations.",
+      "This repository is an experiment workbench for testing structural changes to decoder models and checking recovery behavior after compression. It packages layer removal, healing fine-tuning, least-important-layer search, and attention-head merging into scripts and modules for repeatable ablations.",
     highlights: [
-      "Layer pruning and LoRA-based healing workflows.",
-      "Attention head merging analysis with layer-wise perplexity plots.",
-      "Reusable scripts for iterative and window-based pruning."
+      "Layer pruning and LoRA-based healing workflows with baseline comparisons.",
+      "Attention-head merging analysis with layer-wise perplexity plots from repository artifacts.",
+      "Reusable scripts for iterative and window-based pruning experiments."
+    ],
+    featured: true
+  },
+  {
+    slug: "vllm-adadecode-research",
+    title: "vLLM AdaDecode Research",
+    tag: "LLM systems",
+    image: "figures/team-early-exit.svg",
+    imageAlt: "Schematic preview of early-exit and adaptive-decoding evaluation",
+    imageSource: "Local schematic used for early-exit and adaptive-decoding evaluation work",
+    imageSourceUrl: "figures/team-early-exit.svg",
+    summary:
+      "Secondary systems project: studied why a research AdaDecode speedup does not transfer naively into vLLM with continuous batching and KV-cache constraints.",
+    details:
+      "This project is no longer presented as my main profile, but it is useful evidence of careful systems evaluation. A controlled upstream run showed a 1.54x speedup, while naive vLLM integration broke parity or became slower. The main result was a negative systems finding: real insertion belongs in the Scheduler / KVCacheManager path, not inside model.forward.",
+    highlights: [
+      "Upstream Transformers AdaDecode run: 17.81 -> 27.45 tok/s with deterministic sanity 10/10.",
+      "Naive vLLM integration was rejected because it broke parity or reduced throughput.",
+      "Localized the correct integration point to Scheduler.schedule -> KVCacheManager.allocate_slots."
     ]
   },
   {
@@ -227,9 +295,31 @@ window.TEAM_PROJECTS = [
     image: "figures/team-llm-compression.svg",
     imageAlt: "Schematic preview of an LLM compression and distillation pipeline",
     summary:
-      "A student-team research track on LLM compression methods: quantization, distillation, layer pruning, KV-cache ideas, and reproducible evaluation.",
+      "A student-team research track on LLM compression methods where I worked as Team Lead: project framing, task decomposition, code and experiment review, reproducibility checks, and technical supervision.",
     status: "Public repository",
     action: "Open repository"
+  },
+  {
+    slug: "team-early-exit",
+    title: "SkipLayer / EarlyExit",
+    tag: "BRAIn Lab team",
+    image: "figures/team-early-exit.svg",
+    imageAlt: "Schematic preview of early-exit language-model inference with aligners and an adapter",
+    summary:
+      "A team track I led/supervised on early-exit LLM training and evaluation, with emphasis on intermediate-layer alignment, adapter decisions, and comparable inference experiments.",
+    status: "Repository link coming soon",
+    action: "Details soon"
+  },
+  {
+    slug: "team-nlhf",
+    title: "NLHF",
+    tag: "BRAIn Lab team",
+    image: "figures/team-nlhf.png",
+    imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
+    summary:
+      "A student-team project I led/supervised on preference-style and game-theoretic feedback pipelines for language-model comparison and alignment research.",
+    status: "Repository link coming soon",
+    action: "Details soon"
   },
   {
     slug: "team-theory-games",
@@ -239,31 +329,9 @@ window.TEAM_PROJECTS = [
     image: "figures/team-theory-games.png",
     imageAlt: "Cooperation-rate trajectories in game-theoretic reinforcement learning experiments",
     summary:
-      "A student-team project on Q-learning, neural RL agents, and LLM-agent experiments for game-theoretic social-dilemma settings.",
+      "A student-team project I led/supervised on Q-learning, neural RL agents, and LLM-agent experiments for game-theoretic social-dilemma settings.",
     status: "Public repository",
     action: "Open repository"
-  },
-  {
-    slug: "team-nlhf",
-    title: "NLHF",
-    tag: "BRAIn Lab team",
-    image: "figures/team-nlhf.png",
-    imageAlt: "Tournament dashboard with win matrix, AlphaRank, and Elo-style rankings",
-    summary:
-      "A student-team project on preference-style and game-theoretic feedback pipelines for language-model alignment and model comparison.",
-    status: "Repository link coming soon",
-    action: "Details soon"
-  },
-  {
-    slug: "team-early-exit",
-    title: "SkipLayer / EarlyExit",
-    tag: "BRAIn Lab team",
-    image: "figures/team-early-exit.svg",
-    imageAlt: "Schematic preview of early-exit language-model inference with aligners and an adapter",
-    summary:
-      "A team project on early-exit LLM training, with intermediate-layer alignment and an adapter that predicts when generation can stop.",
-    status: "Repository link coming soon",
-    action: "Details soon"
   },
   {
     slug: "team-sgdiffusion",
@@ -273,7 +341,7 @@ window.TEAM_PROJECTS = [
     image: "figures/team-sgdiffusion-variance-saturation.png",
     imageAlt: "NanoGPT 6.6M variance saturation curves across Hessian eigendirections",
     summary:
-      "A team research track on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion codebase.",
+      "A team research track I led/supervised on SGD noise analysis, finite-step stochastic dynamics, and local-minima experiments built around the SGDiffusion codebase.",
     status: "Project page",
     action: "Open project page"
   },
@@ -284,18 +352,22 @@ window.TEAM_PROJECTS = [
     image: "figures/team-optimization-flows.png",
     imageAlt: "Urban logistics route map with multiple agent trajectories and load labels",
     summary:
-      "A team project comparing optimization algorithms for transportation-flow problems and urban-logistics routing.",
+      "A team project I led/supervised on optimization algorithms for transportation-flow problems and urban-logistics routing.",
     status: "Repository link coming soon",
     action: "Details soon"
   }
 ];
 
 const priorityProjectOrder = [
+  "qwen-deepscaler-distillation",
+  "heterocrossplay-nlhf",
+  "ridiculous-llm-compression",
   "sgdiffusion",
-  "mlfinance",
-  "computational-mathematics",
+  "vllm-adadecode-research",
   "mmo-tm",
   "relaxit",
+  "mlfinance",
+  "computational-mathematics",
   "mlnotes"
 ];
 const priorityBySlug = new Map(priorityProjectOrder.map((slug, index) => [slug, index]));

@@ -15,7 +15,7 @@
     <link rel="icon" href="figures/site-icon-32.png?v=avatar-icon-1" sizes="32x32" type="image/png">
     <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
-    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
+    <link rel="stylesheet" href="assets/styles.css?v=posttraining-3">
   </head>
   <body>
     <header class="site-header">
@@ -27,6 +27,7 @@
           <a href="index.html#talks">Talks</a>
           <a href="cv-en.html">CV EN</a>
           <a href="cv-ru.html" aria-current="page">CV RU</a>
+          <a href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">CV PDF</a>
         </div>
       </nav>
     </header>
@@ -34,16 +35,17 @@
     <main class="page-shell subpage">
       <section class="page-hero" aria-labelledby="cv-page-title">
         <p class="section__eyebrow">CV / Русский</p>
-        <h1 id="cv-page-title">Подробный опыт и проектная работа</h1>
+        <h1 id="cv-page-title">Research Engineer / LLM Post-Training — distillation, SFT, evaluation, multi-agent RL</h1>
         <p>
-          Эта страница намеренно написана более буквально, чем короткое PDF
-          резюме. Здесь я описываю, что именно делал руками, где строил
-          пайплайны и эксперименты, а где мой вклад был скорее в постановке,
-          анализе и техническом сопровождении проекта.
+          Профиль Игоря Игнашина: research engineer с фокусом на LLM
+          post-training, distillation/SFT, evaluation и multi-agent RL.
+          Исследовательская база остается преимуществом для задач quality,
+          alignment и прикладного LLM research.
         </p>
         <div class="lang-switch" aria-label="Переключение языка">
           <a class="button-link" href="cv-en.html">English</a>
           <a class="button-link button-link--primary" href="cv-ru.html">Русский</a>
+          <a class="button-link button-link--download" href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">Скачать PDF</a>
           <a class="button-link" href="index.html">Home</a>
         </div>
       </section>
@@ -51,22 +53,31 @@
       <section class="section" aria-labelledby="profile-title">
         <div class="section__header">
           <p class="section__eyebrow">Профиль</p>
-          <h2 id="profile-title">Текущий фокус</h2>
+          <h2 id="profile-title">Профессиональное позиционирование</h2>
         </div>
         <div class="note-card">
           <p>
-            Я учусь в магистратуре МФТИ и работаю на стыке теории оптимизации и
-            практических ML/LLM-систем. Моя сильная сторона в инженерной части
-            — это не "продуктовая ownership-роль огромной системы", а
-            построение экспериментальных и оценочных пайплайнов, воспроизводимость,
-            анализ результатов и инфраструктура вокруг LLM-обучения и inference-идей.
+            Я учусь в магистратуре МФТИ и работаю на стыке LLM post-training,
+            applied ML и оптимизационных исследований. Сильнейший прикладной
+            кейс - Qwen/DeepScaleR math distillation: 40.3k teacher CoT traces,
+            SFT/Forward-KL training, evaluation на пяти math benchmarks и рост
+            macro Pass@1 с 46.97 до 54.45 при local RL teacher 55.90.
           </p>
           <p>
-            В названиях ролей у меня иногда есть координационная составляющая,
-            но по содержанию работа в основном hands-on: данные, скрипты,
-            прогоны, метрики, анализ, отчеты и техсопровождение небольших
-            исследовательских треков.
+            В ИИИ МФТИ / BRAIn Lab я работал как Research Team Lead:
+            лидировал небольшие команды по distillation/SFT, LLM compression,
+            multi-agent RL/NLHF, SGD dynamics и optimization tracks. Моя роль -
+            постановка гипотез, декомпозиция экспериментов, ревью кода и
+            контроль baseline/evaluation discipline.
           </p>
+          <ul>
+            <li>LLM post-training: SFT, teacher/KL distillation, synthetic and teacher-generated data.</li>
+            <li>Evaluation: graders, reward parsing, benchmark tables, baseline and teacher comparison.</li>
+            <li>Research leadership: distillation/SFT, LLM compression, multi-agent RL/NLHF, optimization tracks.</li>
+            <li>ML engineering: Python, C++, SQL, PyTorch, Hugging Face workflows, Linux, Git.</li>
+            <li>Mathematics: optimization, stochastic processes, minimax problems, probability theory.</li>
+            <li>Data workflows: JSONL, YQL, DataLens, Nirvana.</li>
+          </ul>
         </div>
       </section>
 
@@ -78,46 +89,59 @@
         <div class="cv-entry-list">
           <article class="cv-entry">
             <div class="cv-entry__meta">2024 - 2026 | ИИИ МФТИ / BRAIn Lab / MIRAI; текущая коллаборация с LAB MMO</div>
-            <h3>ML-исследования и техническое сопровождение проектных треков</h3>
+            <h3>Research Team Lead / LLM Post-Training Engineer</h3>
             <p>
-              Здесь у меня была смешанная роль: часть работы — руками писать код и
-              ставить эксперименты, часть — проектировать контур экспериментов и
-              технически сопровождать небольшие студенческие треки. Наиболее
-              прикладные куски выглядят так.
+              Я вел пять небольших исследовательских команд по 1-3 человека и
+              сам участвовал в технической части LLM/post-training проектов.
+              Моя зона ответственности: research framing, выбор baseline,
+              декомпозиция задач, ревью кода и экспериментов, контроль метрик и
+              подготовка воспроизводимых артефактов.
             </p>
             <div class="cv-entry__projects">
               <section class="cv-entry__project">
-                <h4>Пайплайн post-training для LLM</h4>
+                <h4>Qwen / DeepScaleR math distillation</h4>
                 <p>
-                  Собирал и поддерживал workflow для teacher-generated math
-                  data: генерация и подготовка данных, парсинг grader/reward
-                  outputs, сборка JSONL-датасетов, SFT и KL-distillation style
-                  эксперименты, а также benchmark-таблицы и воспроизводимые
-                  прогоны. Основной вклад здесь — data/eval pipeline и
-                  воспроизводимость, а не заявление о новой архитектуре базовой
-                  модели.
+                  Построил end-to-end research pipeline для переноса части RL
+                  gain из DeepScaleR-1.5B-Preview обратно в
+                  DeepSeek-R1-Distill-Qwen-1.5B через teacher-generated CoT,
+                  SFT и Forward KL. В контуре были vLLM teacher generation,
+                  reward/grader parsing, cleaning, train/val split, benchmark
+                  evaluation и summary tables. Результат: 40 300 teacher traces;
+                  macro Pass@1 на AIME 2024, MATH500, AMC 2023, Minerva Math и
+                  OlympiadBench вырос с 46.97 до 54.45, при local RL teacher
+                  55.90.
                 </p>
               </section>
               <section class="cv-entry__project">
-                <h4>Оценка early-exit и adaptive decoding в vLLM</h4>
+                <h4>Multi-agent RL / NLHF / HeteroCrossPlay</h4>
                 <p>
-                  Настраивал offline multi-GPU evaluation для идей раннего
-                  выхода: deterministic sharding, resumable JSONL outputs,
-                  merge/progress scripts и сопоставимые benchmark-прогоны.
-                  Главная ценность этой работы — надежная экспериментальная
-                  инфраструктура и честное сравнение результатов на длинных
-                  inference-запусках.
+                  Лидировал исследовательский трек по preference learning, где
+                  chosen/rejected пары возникают из взаимодействия нескольких
+                  моделей, а не только из статического preference dataset.
+                  Мой вклад: постановка NLHF/cross-play идеи, связка game theory
+                  и LLM alignment, framing verifier reward, сравнение с self-play,
+                  DPO/PPO/GRPO-подходами и техническая постановка экспериментов
+                  на модифицированном VERL recipe.
                 </p>
               </section>
               <section class="cv-entry__project">
-                <h4>Ресурсный скедулинг в беспроводных сетях</h4>
+                <h4>LLM compression / pruning / healing</h4>
                 <p>
-                  Работал над обучением и оценкой learned-компоненты поверх
-                  сильного детерминированного baseline. Моя часть —
-                  это признаки, training/eval loops и сравнение с baseline.
-                  Финальная валидация проводилась в simulator-е на стороне
-                  партнера; сам симулятор и production deployment не были моей
-                  работой.
+                  Вел research track по структурной избыточности decoder-only
+                  LLM: layer pruning, LoRA healing, decoder/layer importance
+                  search и attention-head merging. Мой вклад: постановка
+                  baseline -> compression -> healing -> evaluation workflow,
+                  review экспериментов и интерпретация quality/size trade-off.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>Optimization and SGD dynamics tracks</h4>
+                <p>
+                  Руководил и участвовал в проектах по finite-step SGD dynamics,
+                  minimax/DRO optimization, Frank-Wolfe variants и прикладной
+                  оптимизации. Эти проекты не являются NLP core, но дают сильную
+                  базу для аккуратной постановки гипотез, baseline comparison и
+                  анализа устойчивости training objectives.
                 </p>
               </section>
             </div>
@@ -127,10 +151,11 @@
             <div class="cv-entry__meta">янв. 2026 - мар. 2026 | MBZUAI</div>
             <h3>Visiting research student</h3>
             <p>
-              Фокусировался на теории LMO-based optimization methods и схемах
-              ускорения, в том числе на анализах, связанных с Muon и
-              Lookahead-type идеями. Это был в первую очередь теоретический
-              период, а не data/systems engineering.
+              Исследовал LMO-based методы оптимизации и схемы ускорения,
+              включая постановки, связанные с Muon и Lookahead-type идеями.
+              Этот опыт усиливает прикладную LLM-работу: помогает критически
+              читать статьи, проверять assumptions и строить эксперименты, где
+              вывод следует из метрик и абляций.
             </p>
           </article>
 
@@ -139,10 +164,10 @@
             <h3>Динамика SGD и multi-agent RL</h3>
             <p>
               Работаю над теоретической постановкой и экспериментами по шуму SGD
-              и его конечному шагу, а также над смежными темами в multi-agent
-              reinforcement learning. Практический результат здесь — код
-              экспериментов, генерация фигур и анализ под статьи, а не готовый
-              прикладной продукт.
+              и finite-step behavior, а также над смежными темами в multi-agent
+              reinforcement learning. Личный вклад в прикладной части: код
+              экспериментов, генерация фигур, Hessian-basis diagnostics и анализ
+              результатов под статьи.
             </p>
           </article>
 
@@ -150,9 +175,10 @@
             <div class="cv-entry__meta">Более ранний этап | Яндекс</div>
             <h3>Data Analyst Intern</h3>
             <p>
-              Работал с внутренними аналитическими инструментами и
-              data-workflows. Этот опыт важен скорее как база по работе с
-              данными и бизнесовыми запросами, чем как центральная LLM-роль.
+              Автоматизировал ежедневный pipeline распределения и закрытия
+              заявок B2B-подрядчиков, писал обработку данных в YQL и собирал
+              операционные dashboard-ы в DataLens. Использовал Nirvana для
+              orchestration внутренних data-workflows.
             </p>
           </article>
         </div>
@@ -161,37 +187,36 @@
       <section class="section" aria-labelledby="projects-title">
         <div class="section__header">
           <p class="section__eyebrow">Проекты</p>
-          <h2 id="projects-title">Как выглядит моя проектная работа по сути</h2>
+          <h2 id="projects-title">Выбранные проекты и публичные артефакты</h2>
         </div>
         <div class="cv-entry-list">
           <article class="cv-entry">
-            <h3>SGDiffusion</h3>
+            <h3>Qwen / DeepScaleR math post-training</h3>
             <p>
-              Репозиторий для finite-step SGD экспериментов. Использую его,
-              чтобы запускать контролируемые траектории, сравнивать их с
-              Langevin-style аппроксимациями, смотреть на поведение в
-              Hessian-basis и воспроизводить paper figures. Это исследовательский
-              код и анализ, а не production training framework.
+              Основной post-training кейс: 40.3k teacher-generated CoT traces,
+              SFT и Forward KL, reward/grader parsing, cleaning, evaluation на
+              пяти math benchmarks. Лучший SFT run поднял macro Pass@1 с 46.97
+              до 54.45; local RL teacher - 55.90. Опубликованы teacher40k и
+              clean-v4 datasets на Hugging Face.
             </p>
           </article>
           <article class="cv-entry">
             <h3>Ridiculous-LLM-Compression</h3>
             <p>
-              Рабочий код для compression-экспериментов: layer pruning, healing
-              fine-tuning, decoder search, attention-head merging. Цель —
-              тестировать структурные изменения модели и процедуры
-              восстановления качества, затем смотреть на perplexity и
-              downstream behavior. Это скорее экспериментальная мастерская, чем
-              отполированная публичная библиотека.
+              Рабочий код для compression-экспериментов: layer pruning,
+              LoRA-based healing, decoder search, attention-head merging и
+              layer-wise анализ perplexity. Мой вклад стоит описывать через
+              реализованные экспериментальные процедуры, baseline comparison и
+              проверку downstream behavior. Численные speedup/perplexity delta
+              стоит добавить после привязки к конкретному артефакту.
             </p>
           </article>
           <article class="cv-entry">
-            <h3>mmo_tm и задачи traffic assignment</h3>
+            <h3>SGDiffusion</h3>
             <p>
-              Реализации solvers и пайплайны экспериментов для equilibrium
-              traffic assignment на реальных дорожных графах. Мой вклад здесь —
-              optimization methods, постановка и прогон экспериментов,
-              сравнение сходимости; это не GIS и не frontend.
+              Репозиторий для finite-step SGD experiments: controlled
+              trajectories, Langevin-style comparisons, Hessian-basis diagnostics
+              и воспроизводимая генерация paper figures.
             </p>
           </article>
           <article class="cv-entry">
@@ -199,9 +224,16 @@
             <p>
               Learned-компонента, которая оценивается против сильного
               детерминированного baseline в условиях внешнего simulator-а.
-              Главная инженерная работа — подготовка признаков, training loops,
-              evaluation runs и отчеты, которые может проверить команда
-              партнера.
+              Личная инженерная работа: признаки, training loops, evaluation
+              runs и отчеты для проверки партнерской командой.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>mmo_tm и traffic assignment</h3>
+            <p>
+              Реализации solvers и пайплайны экспериментов для equilibrium
+              traffic assignment на реальных дорожных графах. Личный вклад:
+              optimization methods, experiment setup и convergence comparison.
             </p>
           </article>
         </div>
@@ -224,15 +256,6 @@
               <li><a href="https://github.com/intsystems/Ignashin_MS_thesis" target="_blank" rel="noreferrer">M.S. thesis repository</a></li>
             </ul>
           </article>
-          <article class="cv-entry">
-            <h3>Школьные олимпиады</h3>
-            <ul>
-              <li>Победитель Физтех-олимпиады по математике.</li>
-              <li>Победитель олимпиад «Шаг в будущее» по математике и физике.</li>
-              <li>Победитель межрегиональной олимпиады КФУ по математике.</li>
-              <li>Победитель муниципального этапа Всероссийской олимпиады школьников по математике.</li>
-            </ul>
-          </article>
         </div>
       </section>
 
@@ -248,7 +271,7 @@
           </article>
           <article class="cv-entry">
             <h3>ML и LLM работа</h3>
-            <p>PyTorch, JAX, vLLM, Hugging Face workflows, SFT, teacher/KL distillation, reward parsing, evaluation pipelines, RL.</p>
+            <p>PyTorch, Hugging Face workflows, vLLM, SFT, teacher/KL distillation, reward/grader parsing, benchmark evaluation, baseline and teacher comparison, RL.</p>
           </article>
           <article class="cv-entry">
             <h3>Математика и оптимизация</h3>

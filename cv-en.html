@@ -15,7 +15,7 @@
     <link rel="icon" href="figures/site-icon-32.png?v=avatar-icon-1" sizes="32x32" type="image/png">
     <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
-    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
+    <link rel="stylesheet" href="assets/styles.css?v=posttraining-3">
   </head>
   <body>
     <header class="site-header">
@@ -27,6 +27,7 @@
           <a href="index.html#talks">Talks</a>
           <a href="cv-en.html" aria-current="page">CV EN</a>
           <a href="cv-ru.html">CV RU</a>
+          <a href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">CV PDF</a>
         </div>
       </nav>
     </header>
@@ -34,16 +35,17 @@
     <main class="page-shell subpage">
       <section class="page-hero" aria-labelledby="cv-page-title">
         <p class="section__eyebrow">CV / English</p>
-        <h1 id="cv-page-title">Detailed experience and project work</h1>
+        <h1 id="cv-page-title">Research Engineer / LLM Post-Training — distillation, SFT, evaluation, multi-agent RL</h1>
         <p>
-          This page is intentionally more literal than a short PDF resume. It
-          describes what I actually implemented, what kinds of experiments I
-          ran, and where my contribution was infrastructure, evaluation,
-          theory, or project supervision.
+          Igor Ignashin's profile: research engineering focused on LLM
+          post-training, distillation/SFT, evaluation, and multi-agent RL.
+          The research background remains a strength for quality, alignment,
+          and applied LLM research roles.
         </p>
         <div class="lang-switch" aria-label="Language switch">
           <a class="button-link button-link--primary" href="cv-en.html">English</a>
           <a class="button-link" href="cv-ru.html">Русский</a>
+          <a class="button-link button-link--download" href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">Download PDF</a>
           <a class="button-link" href="index.html">Home</a>
         </div>
       </section>
@@ -51,21 +53,32 @@
       <section class="section" aria-labelledby="profile-title">
         <div class="section__header">
           <p class="section__eyebrow">Profile</p>
-          <h2 id="profile-title">Current profile</h2>
+          <h2 id="profile-title">Professional positioning</h2>
         </div>
         <div class="note-card">
           <p>
-            I am an M.S. candidate at MIPT working across optimization
-            research and practical ML systems. My strongest engineering work is
-            in experiment pipelines, evaluation, reproducibility, and
-            infrastructure around LLM training and inference ideas rather than
-            in large-scale production ownership of a single commercial system.
+            I am an M.S. candidate at MIPT working across LLM post-training,
+            applied ML, and optimization research. My strongest applied case is
+            Qwen/DeepScaleR math distillation: 40.3k teacher CoT traces,
+            SFT/Forward-KL training, evaluation on five math benchmarks, and
+            macro Pass@1 improvement from 46.97 to 54.45 against a 55.90 local
+            RL teacher.
           </p>
           <p>
-            In project titles I sometimes have coordination responsibilities,
-            but the substance of my work is still hands-on: data preparation,
-            experiment setup, metrics, scripts, analysis, and reporting.
+            At MIPT AI Institute / BRAIn Lab I worked as a Research Team Lead:
+            I led small teams on distillation/SFT, LLM compression, multi-agent
+            RL/NLHF, SGD dynamics, and optimization tracks. My role was
+            hypothesis framing, experiment decomposition, code review, and
+            baseline/evaluation discipline.
           </p>
+          <ul>
+            <li>LLM post-training: SFT, teacher/KL distillation, synthetic and teacher-generated data.</li>
+            <li>Evaluation: graders, reward parsing, benchmark tables, baseline and teacher comparison.</li>
+            <li>Research leadership: distillation/SFT, LLM compression, multi-agent RL/NLHF, optimization tracks.</li>
+            <li>ML engineering: Python, C++, SQL, PyTorch, Hugging Face workflows, Linux, Git.</li>
+            <li>Mathematics: optimization, stochastic processes, minimax problems, probability theory.</li>
+            <li>Data workflows: JSONL, YQL, DataLens, Nirvana.</li>
+          </ul>
         </div>
       </section>
 
@@ -77,42 +90,59 @@
         <div class="cv-entry-list">
           <article class="cv-entry">
             <div class="cv-entry__meta">2024 - 2026 | MIPT AI Institute / BRAIn Lab / MIRAI; ongoing collaboration with LAB MMO</div>
-            <h3>ML research and project supervision</h3>
+            <h3>Research Team Lead / LLM Post-Training Engineer</h3>
             <p>
-              My work there was mixed: part hands-on implementation, part
-              experiment design and technical supervision of small student
-              tracks. The most relevant applied work is below.
+              I led five small research teams of 1-3 people and also contributed
+              technically to LLM/post-training projects. My scope included
+              research framing, baseline selection, task decomposition, code and
+              experiment review, metric control, and preparation of reproducible
+              artifacts.
             </p>
             <div class="cv-entry__projects">
               <section class="cv-entry__project">
-                <h4>LLM post-training pipeline</h4>
+                <h4>Qwen / DeepScaleR math distillation</h4>
                 <p>
-                  Built and maintained a workflow for teacher-generated math
-                  data, parsing grader and reward outputs, preparing JSONL
-                  datasets, running SFT and KL-distillation style experiments,
-                  and producing benchmark tables. The contribution is mainly in
-                  data/eval pipeline construction and reproducible runs, not in
-                  claiming a novel foundation-model architecture.
+                  Built an end-to-end research pipeline for transferring part of
+                  the DeepScaleR-1.5B-Preview RL gain back into
+                  DeepSeek-R1-Distill-Qwen-1.5B through teacher-generated CoT,
+                  SFT, and Forward KL. The workflow covered vLLM teacher
+                  generation, reward/grader parsing, cleaning, train/val split,
+                  benchmark evaluation, and summary tables. Result: 40,300
+                  teacher traces; macro Pass@1 on AIME 2024, MATH500, AMC 2023,
+                  Minerva Math, and OlympiadBench improved from 46.97 to 54.45,
+                  with a 55.90 local RL teacher.
                 </p>
               </section>
               <section class="cv-entry__project">
-                <h4>vLLM early-exit and adaptive-decoding evaluation</h4>
+                <h4>Multi-agent RL / NLHF / HeteroCrossPlay</h4>
                 <p>
-                  Set up offline multi-GPU evaluation for early-exit ideas:
-                  deterministic sharding, resumable JSONL outputs, merge and
-                  progress scripts, and comparable benchmark runs. The core
-                  value of this work is reliable experimentation and result
-                  comparison under long-running inference workloads.
+                  Led a research track on preference learning where
+                  chosen/rejected pairs are produced by interaction between
+                  multiple models rather than only by a static preference
+                  dataset. My contribution: NLHF/cross-play framing, connecting
+                  game theory with LLM alignment, verifier-reward framing,
+                  comparison with self-play, DPO/PPO/GRPO-style approaches, and
+                  experimental setup around a modified VERL recipe.
                 </p>
               </section>
               <section class="cv-entry__project">
-                <h4>Wireless resource allocation</h4>
+                <h4>LLM compression / pruning / healing</h4>
                 <p>
-                  Worked on training and evaluation around a strong
-                  deterministic baseline. My part was feature
-                  handling, training/eval loops, and baseline comparison. Final
-                  validation was done in a partner-side simulator; I did not
-                  build the simulator or production deployment layer.
+                  Led a research track on structural redundancy in decoder-only
+                  LLMs: layer pruning, LoRA healing, decoder/layer importance
+                  search, and attention-head merging. My contribution: setting
+                  the baseline -> compression -> healing -> evaluation workflow,
+                  reviewing experiments, and interpreting quality/size trade-offs.
+                </p>
+              </section>
+              <section class="cv-entry__project">
+                <h4>Optimization and SGD dynamics tracks</h4>
+                <p>
+                  Led and contributed to projects on finite-step SGD dynamics,
+                  minimax/DRO optimization, Frank-Wolfe variants, and applied
+                  optimization. These are supporting, not core NLP projects, but
+                  they strengthen hypothesis design, baseline comparison, and
+                  stability analysis for training objectives.
                 </p>
               </section>
             </div>
@@ -122,10 +152,11 @@
             <div class="cv-entry__meta">Jan 2026 - Mar 2026 | MBZUAI</div>
             <h3>Visiting research student</h3>
             <p>
-              Focused on theory for LMO-based optimization methods and
-              acceleration schemes, including analyses connected to Muon and
-              Lookahead-type ideas. This period was mostly theoretical work
-              rather than data or systems engineering.
+              Studied LMO-based optimization methods and acceleration schemes,
+              including formulations connected to Muon and Lookahead-type ideas.
+              This research work supports my applied LLM profile by helping me
+              read papers critically, check assumptions, and design experiments
+              where conclusions follow from metrics and ablations.
             </p>
           </article>
 
@@ -135,9 +166,9 @@
             <p>
               Worked on theoretical framing and experiments for SGD noise and
               finite-step behavior, plus related multi-agent reinforcement
-              learning topics. The practical output is experiment code, figure
-              generation, and paper-oriented analysis rather than a standalone
-              deployed product.
+              learning topics. Applied contribution: experiment code, figure
+              generation, Hessian-basis diagnostics, and result analysis for
+              papers.
             </p>
           </article>
 
@@ -145,9 +176,10 @@
             <div class="cv-entry__meta">Earlier role | Yandex</div>
             <h3>Data Analyst Intern</h3>
             <p>
-              Worked with internal data tools and analytics workflows. This is
-              relevant mainly as background in data work and business-facing
-              analysis rather than as a core LLM role.
+              Automated a daily pipeline for B2B contractor ticket assignment
+              and closure analytics, wrote data processing in YQL, and built
+              operational dashboards in DataLens. Used Nirvana to orchestrate
+              internal data workflows.
             </p>
           </article>
         </div>
@@ -156,46 +188,53 @@
       <section class="section" aria-labelledby="projects-title">
         <div class="section__header">
           <p class="section__eyebrow">Selected Projects</p>
-          <h2 id="projects-title">What the project work actually looks like</h2>
+          <h2 id="projects-title">Selected projects and public artifacts</h2>
         </div>
         <div class="cv-entry-list">
           <article class="cv-entry">
-            <h3>SGDiffusion</h3>
+            <h3>Qwen / DeepScaleR math post-training</h3>
             <p>
-              A repository for finite-step SGD experiments. I use it to run
-              controlled trajectory experiments, compare them against
-              Langevin-style approximations, inspect Hessian-basis behavior, and
-              regenerate paper figures. This is experiment and analysis code,
-              not a productized training framework.
+              Core post-training case: 40.3k teacher-generated CoT traces, SFT
+              and Forward KL, reward/grader parsing, cleaning, evaluation on
+              five math benchmarks. The best SFT run improved macro Pass@1 from
+              46.97 to 54.45; local RL teacher was 55.90. Teacher40k and
+              clean-v4 datasets are published on Hugging Face.
             </p>
           </article>
           <article class="cv-entry">
             <h3>Ridiculous-LLM-Compression</h3>
             <p>
-              Working code for compression experiments: layer pruning, healing
-              fine-tuning, decoder search, and attention-head merging. The goal
-              is to test structural changes and recovery procedures, then track
-              perplexity and downstream behavior. The repository is an
-              experimental workbench more than a polished public library.
+              Working code for compression experiments: layer pruning,
+              LoRA-based healing, decoder search, attention-head merging, and
+              layer-wise perplexity analysis. I describe this through
+              implemented experimental procedures, baseline comparison, and
+              downstream behavior checks. Numeric speedup or perplexity deltas
+              should be added after linking them to a concrete artifact.
             </p>
           </article>
           <article class="cv-entry">
-            <h3>mmo_tm and related traffic-assignment work</h3>
+            <h3>SGDiffusion</h3>
             <p>
-              Solver implementations and experiment pipelines for equilibrium
-              traffic assignment on real road graphs. My contribution is in
-              optimization methods, experiment setup, and convergence
-              comparison, not in GIS or frontend systems.
+              Repository for finite-step SGD experiments: controlled
+              trajectories, Langevin-style comparisons, Hessian-basis
+              diagnostics, and reproducible paper-figure generation.
             </p>
           </article>
           <article class="cv-entry">
             <h3>Resource allocation project</h3>
             <p>
               A learned component evaluated against a strong deterministic
-              baseline under external simulation constraints. The main
-              engineering work is preparing features, training loops,
-              evaluation runs, and comparison reports that can be checked by a
-              partner team.
+              baseline under external simulation constraints. Personal
+              engineering work: features, training loops, evaluation runs, and
+              reports for partner-side validation.
+            </p>
+          </article>
+          <article class="cv-entry">
+            <h3>mmo_tm and traffic assignment</h3>
+            <p>
+              Solver implementations and experiment pipelines for equilibrium
+              traffic assignment on real road graphs. Personal contribution:
+              optimization methods, experiment setup, and convergence comparison.
             </p>
           </article>
         </div>
@@ -218,15 +257,6 @@
               <li><a href="https://github.com/intsystems/Ignashin_MS_thesis" target="_blank" rel="noreferrer">M.S. thesis repository</a></li>
             </ul>
           </article>
-          <article class="cv-entry">
-            <h3>School olympiads</h3>
-            <ul>
-              <li>Winner, Phystech Mathematics Olympiad.</li>
-              <li>Winner, Step into the Future Olympiads in Mathematics and Physics.</li>
-              <li>Winner, KFU Interregional Mathematics Olympiad.</li>
-              <li>Winner, municipal stage of the All-Russian School Olympiad in Mathematics.</li>
-            </ul>
-          </article>
         </div>
       </section>
 
@@ -242,7 +272,7 @@
           </article>
           <article class="cv-entry">
             <h3>ML and LLM work</h3>
-            <p>PyTorch, JAX, vLLM, Hugging Face workflows, SFT, teacher/KL distillation, reward parsing, evaluation pipelines, RL.</p>
+            <p>PyTorch, Hugging Face workflows, vLLM, SFT, teacher/KL distillation, reward/grader parsing, benchmark evaluation, baseline and teacher comparison, RL.</p>
           </article>
           <article class="cv-entry">
             <h3>Math and optimization</h3>

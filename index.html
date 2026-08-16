@@ -6,12 +6,12 @@
     <title>Igor Ignashin</title>
     <meta
       name="description"
-      content="Personal page of Igor Ignashin: LLM post-training, SFT, inference acceleration, machine learning optimization, stochastic dynamics, and applied optimization projects."
+      content="Personal page of Igor Ignashin: research engineering for LLM post-training, distillation, SFT, multi-agent RL, evaluation, and optimization research."
     >
     <meta property="og:title" content="Igor Ignashin">
     <meta
       property="og:description"
-      content="ML and optimization researcher working on LLM post-training, SFT, inference acceleration, and stochastic optimization."
+      content="Research Engineer focused on LLM post-training, distillation, SFT, multi-agent RL, evaluation, and optimization research."
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://thunderstormxx.github.io/PersonalPage/figures/profile.png">
@@ -19,7 +19,7 @@
     <link rel="icon" href="figures/site-icon-16.png?v=avatar-icon-1" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="figures/site-icon-180.png?v=avatar-icon-1">
     <link rel="preconnect" href="https://github.com">
-    <link rel="stylesheet" href="assets/styles.css?v=cv-bilingual-2">
+    <link rel="stylesheet" href="assets/styles.css?v=posttraining-3">
   </head>
   <body>
     <header class="site-header">
@@ -31,6 +31,7 @@
           <a href="index.html#talks">Talks</a>
           <a href="cv-en.html">CV EN</a>
           <a href="cv-ru.html">CV RU</a>
+          <a href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">CV PDF</a>
         </div>
       </nav>
     </header>
@@ -45,45 +46,31 @@
           height="136"
         >
         <h1 id="page-title">Igor Ignashin</h1>
-        <p class="profile__role">ML researcher working on optimization and LLM pipelines</p>
+        <p class="profile__role">Research Engineer / LLM Post-Training — distillation, SFT, evaluation, multi-agent RL</p>
 
         <div class="profile__summary">
           <p>
-            I am an M.S. candidate at the Moscow Institute of Physics and
-            Technology (MIPT), Faculty of Applied Mathematics and Informatics,
-            Department of Intelligent Data Analysis.
+            I work on LLM post-training and applied research: SFT,
+            teacher/KL distillation, reward and grader parsing, benchmark
+            evaluation, and multi-agent preference-learning setups.
           </p>
           <p>
-            My work is split between optimization research and practical ML
-            systems. On the research side, I work on SGD dynamics, minimax and
-            LMO-based optimization, and traffic-assignment models. On the
-            systems side, I build training and evaluation pipelines for LLM
-            post-training and inference experiments.
+            My strongest LLM case is a Qwen/DeepScaleR math-distillation
+            project: 40.3k teacher-generated CoT traces, SFT/Forward-KL
+            training, evaluation on five math benchmarks, and macro Pass@1
+            improvement from 46.97 to 54.45 against a 55.90 local RL teacher.
           </p>
           <p>
-            Previously, at
-            MIPT AI Institute /
-            <a href="https://miriai.org/" target="_blank" rel="noreferrer">BRAIn Lab / MIRAI</a>
-            under the supervision of
-            <a href="https://www.hse.ru/org/persons/444324804/" target="_blank" rel="noreferrer">Alexander Beznosikov</a>,
-            I worked on teacher-generated math data for LLM post-training,
-            reward parsing, SFT/KL-distillation experiments, benchmark
-            reporting, and offline evaluation of early-exit/adaptive decoding ideas
-            in vLLM. I also collaborate with
-            <a href="https://www.hse.ru/org/persons/803294898/" target="_blank" rel="noreferrer">Demyan Yarmoshik</a>
-            at
-            <a href="https://labmmo.ru/" target="_blank" rel="noreferrer">LAB MMO</a>
-            in
-            <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87" target="_blank" rel="noreferrer">Alexander Gasnikov's</a>
-            group. I recently also worked as a visiting research student at
-            MBZUAI under
-            <a href="https://scholar.google.com/citations?user=QPVriwoAAAAJ&amp;hl=ru&amp;oi=ao" target="_blank" rel="noreferrer">Eduard Gorbunov</a>.
+            At MIPT AI Institute / BRAIn Lab I worked as a Research Team Lead:
+            I led small research teams on distillation/SFT, LLM compression,
+            multi-agent RL/NLHF, SGD dynamics, and optimization projects.
           </p>
           <p>
-            I also collaborate on SGD analysis and multi-agent reinforcement
-            learning with
-            <a href="https://scholar.google.com/citations?user=RNnvD3wAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Andrei Leonidov's</a>
-            team.
+            I am an M.S. candidate at MIPT, Department of Intelligent Data
+            Analysis. My research background in optimization, stochastic
+            dynamics, and minimax methods helps me test new LLM quality,
+            alignment, post-training, and inference ideas with controlled
+            experiments rather than intuition alone.
           </p>
         </div>
 
@@ -97,38 +84,40 @@
           <a href="#cv">Theses</a>
           <a href="cv-en.html">CV (EN)</a>
           <a href="cv-ru.html">CV (RU)</a>
+          <a href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">Download CV</a>
         </nav>
       </section>
 
       <section class="section" id="focus" aria-labelledby="focus-title">
         <div class="section__header">
-          <p class="section__eyebrow">Research Focus</p>
-          <h2 id="focus-title">Optimization, stochastic dynamics, and practical ML systems</h2>
+          <p class="section__eyebrow">Work Focus</p>
+          <h2 id="focus-title">LLM post-training, research leadership, and optimization grounding</h2>
         </div>
         <div class="focus-grid" aria-label="Research focus areas">
           <article>
             <span>01</span>
-            <h3>Optimization Theory</h3>
+            <h3>LLM Post-Training Data &amp; Eval</h3>
             <p>
-              Convergence analysis for minimax and LMO-based methods, including
-              Frank-Wolfe variants and optimizers used in deep learning.
+              SFT, teacher/KL distillation, reward and grader parsing,
+              benchmark evaluation, and careful base-vs-student-vs-teacher
+              comparisons.
             </p>
           </article>
           <article>
             <span>02</span>
-            <h3>Stochastic Dynamics</h3>
+            <h3>Research Team Leadership</h3>
             <p>
-              Experiments and theory for finite-step SGD dynamics beyond
-              Brownian-motion approximations and standard Langevin models.
+              Led five small research teams across LLM distillation/compression,
+              multi-agent RL/NLHF, SGD dynamics, and applied optimization.
             </p>
           </article>
           <article>
             <span>03</span>
-            <h3>LLM Efficiency</h3>
+            <h3>Optimization Research</h3>
             <p>
-              Post-training and efficiency projects on SFT, teacher
-              distillation, pruning, early exit, multi-agent RL, and LLM
-              training dynamics.
+              Theory and experiments for finite-step SGD dynamics, minimax and
+              LMO-based methods, Frank-Wolfe variants, and optimization tools
+              that support careful ML experimentation.
             </p>
           </article>
         </div>
@@ -282,19 +271,19 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section__header">
           <p class="section__eyebrow">Projects</p>
-          <h2 id="projects-title">My work and team research</h2>
+          <h2 id="projects-title">LLM post-training work, research code, and team tracks</h2>
         </div>
         <div class="project-subsection">
           <div class="project-subsection__header">
             <h3>My projects</h3>
-            <p>Research and engineering projects where I am the main author or a direct contributor.</p>
+            <p>Direct post-training work, public experiment code, and reusable research artifacts.</p>
           </div>
           <div class="project-grid" data-project-grid="personal"></div>
         </div>
         <div class="project-subsection">
           <div class="project-subsection__header">
             <h3>BRAIn Lab team projects</h3>
-            <p>Projects I have led or supervised with student teams; public links are shown once the repository is ready.</p>
+            <p>Student-team tracks where I worked as Team Lead / research project lead: research framing, task decomposition, code and experiment review, reproducibility, and baseline discipline.</p>
           </div>
           <div class="project-grid" data-project-grid="team"></div>
         </div>
@@ -317,20 +306,24 @@
             </p>
             <h3>Current work</h3>
             <p>
-              My work is split between hands-on coding, experiment design, and
-              supervision of small project tracks. The most relevant practical
-              work for ML/LLM roles is:
+              My strongest applied work is LLM post-training and research
+              engineering:
             </p>
             <ul class="cv-list">
               <li>
-                LLM post-training pipelines: preparing teacher-generated math
-                datasets, parsing grader/reward outputs, running SFT/KL-style
-                experiments, and producing reproducible benchmark tables.
+                Qwen/DeepScaleR math distillation: 40.3k teacher CoT traces,
+                SFT and Forward-KL training, five-benchmark evaluation, macro
+                Pass@1 46.97 to 54.45.
               </li>
               <li>
-                vLLM-based inference evaluation: setting up deterministic
-                multi-GPU offline runs, resumable JSONL outputs, and comparison
-                scripts for early-exit and adaptive decoding ideas.
+                Research Team Lead work across distillation/SFT, LLM
+                compression, multi-agent RL/NLHF, SGD dynamics, and applied
+                optimization tracks.
+              </li>
+              <li>
+                I use optimization and SGD-dynamics research as a tool for
+                designing controlled experiments, interpreting failure modes,
+                and keeping applied ML work measurable.
               </li>
             </ul>
             <h3>Research affiliations</h3>
@@ -364,25 +357,18 @@
                 </a>
               </li>
             </ul>
-            <h3>School olympiads</h3>
-            <ul class="cv-list">
-              <li>Winner, Phystech Mathematics Olympiad.</li>
-              <li>Winner, Step into the Future Olympiads in Mathematics and Physics.</li>
-              <li>Winner, KFU Interregional Mathematics Olympiad.</li>
-              <li>Winner, municipal stage of the All-Russian School Olympiad in Mathematics.</li>
-            </ul>
             <h3>Technical stack</h3>
             <p>
-              Python, C++, SQL, PyTorch, JAX, vLLM, Hugging Face workflows,
-              SFT, teacher/KL distillation, reward parsing,
-              reinforcement learning, LLMs, convex and nonconvex optimization,
-              stochastic processes, multi-GPU server workflows, Linux, Git,
-              YQL, DataLens, and Nirvana.
+              Python, C++, SQL, PyTorch, Hugging Face workflows, vLLM,
+              SFT, teacher/KL distillation, reward parsing, reinforcement
+              learning, LLMs, convex and nonconvex optimization, stochastic
+              processes, Linux, Git, YQL, DataLens, and Nirvana.
             </p>
           </div>
           <div class="cv-panel__actions" aria-label="CV actions">
             <a href="cv-en.html">Detailed CV (EN)</a>
             <a href="cv-ru.html">CV на русском</a>
+            <a href="assets/igor_ignashin_cv.pdf" download="Igor_Ignashin_CV.pdf">Download CV PDF</a>
             <a href="projects.html">Project pages</a>
           </div>
         </div>
@@ -392,7 +378,7 @@
     <footer class="site-footer">
       <p>&copy; 2026 Igor Ignashin</p>
     </footer>
-    <script src="assets/project-data.js?v=project-copy-2"></script>
-    <script src="assets/project-page.js?v=project-copy-2"></script>
+    <script src="assets/project-data.js?v=posttraining-3"></script>
+    <script src="assets/project-page.js?v=posttraining-3"></script>
   </body>
 </html>
