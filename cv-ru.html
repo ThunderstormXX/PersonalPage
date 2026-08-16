@@ -58,22 +58,23 @@
         <div class="note-card">
           <p>
             Я учусь в магистратуре МФТИ и работаю на стыке LLM post-training,
-            applied ML и оптимизационных исследований. Сильнейший прикладной
-            кейс - Qwen/DeepScaleR math distillation: 40.3k teacher CoT traces,
-            SFT/Forward-KL training, evaluation на пяти math benchmarks и рост
-            macro Pass@1 с 46.97 до 54.45 при local RL teacher 55.90.
+            applied ML и оптимизационных исследований. Основной прикладной
+            фокус - distillation/SFT, teacher-generated data,
+            reward/grader parsing, benchmark evaluation и multi-agent RL/NLHF.
           </p>
           <p>
             В ИИИ МФТИ / BRAIn Lab я работал как Research Team Lead:
-            лидировал небольшие команды по distillation/SFT, LLM compression,
-            multi-agent RL/NLHF, SGD dynamics и optimization tracks. Моя роль -
-            постановка гипотез, декомпозиция экспериментов, ревью кода и
-            контроль baseline/evaluation discipline.
+            в проектах моя роль была смешанной - я задавал направление и
+            одновременно участвовал hands-on в постановке, коде, экспериментах
+            и анализе. В distillation/SFT, multi-agent RL/NLHF, SGD dynamics и
+            optimization tracks я совмещал лидерство и hands-on вклад; в LLM
+            compression моя роль была major hands-on contribution в постановке
+            и анализе экспериментов.
           </p>
           <ul>
             <li>LLM post-training: SFT, teacher/KL distillation, synthetic and teacher-generated data.</li>
             <li>Evaluation: graders, reward parsing, benchmark tables, baseline and teacher comparison.</li>
-            <li>Research leadership: distillation/SFT, LLM compression, multi-agent RL/NLHF, optimization tracks.</li>
+            <li>Лидерство: distillation/SFT, multi-agent RL/NLHF, optimization tracks; major hands-on contribution in LLM compression.</li>
             <li>ML engineering: Python, C++, SQL, PyTorch, Hugging Face workflows, Linux, Git.</li>
             <li>Mathematics: optimization, stochastic processes, minimax problems, probability theory.</li>
             <li>Data workflows: JSONL, YQL, DataLens, Nirvana.</li>
@@ -91,11 +92,12 @@
             <div class="cv-entry__meta">2024 - 2026 | ИИИ МФТИ / BRAIn Lab / MIRAI; текущая коллаборация с LAB MMO</div>
             <h3>Research Team Lead / LLM Post-Training Engineer</h3>
             <p>
-              Я вел пять небольших исследовательских команд по 1-3 человека и
-              сам участвовал в технической части LLM/post-training проектов.
-              Моя зона ответственности: research framing, выбор baseline,
-              декомпозиция задач, ревью кода и экспериментов, контроль метрик и
-              подготовка воспроизводимых артефактов.
+              Я вел пять небольших исследовательских команд по 1-3 человека.
+              В большинстве проектов роль была совмещенной: я лидировал
+              research direction и одновременно участвовал в технической части -
+              выбирал baseline, декомпозировал эксперименты, писал/ревьюил код,
+              проверял метрики и доводил результаты до воспроизводимых
+              артефактов.
             </p>
             <div class="cv-entry__projects">
               <section class="cv-entry__project">
@@ -125,13 +127,13 @@
                 </p>
               </section>
               <section class="cv-entry__project">
-                <h4>LLM compression / pruning / healing</h4>
+                <h4>LLM compression / pruning</h4>
                 <p>
-                  Вел research track по структурной избыточности decoder-only
-                  LLM: layer pruning, LoRA healing, decoder/layer importance
-                  search и attention-head merging. Мой вклад: постановка
-                  baseline -> compression -> healing -> evaluation workflow,
-                  review экспериментов и интерпретация quality/size trade-off.
+                  Принимал участие в research track по структурной избыточности
+                  decoder-only LLM и вносил основной вклад в постановку и анализ
+                  compression-экспериментов: layer pruning, decoder/layer
+                  importance search, attention-head merging, baseline comparison
+                  и интерпретация quality/size trade-off.
                 </p>
               </section>
               <section class="cv-entry__project">
@@ -204,8 +206,8 @@
             <h3>Ridiculous-LLM-Compression</h3>
             <p>
               Рабочий код для compression-экспериментов: layer pruning,
-              LoRA-based healing, decoder search, attention-head merging и
-              layer-wise анализ perplexity. Мой вклад стоит описывать через
+              decoder search, attention-head merging и layer-wise анализ
+              perplexity. Мой вклад стоит описывать через
               реализованные экспериментальные процедуры, baseline comparison и
               проверку downstream behavior. Численные speedup/perplexity delta
               стоит добавить после привязки к конкретному артефакту.
